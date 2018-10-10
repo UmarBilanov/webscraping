@@ -5,8 +5,6 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
 import re
-import pandas as pd
-from tabulate import tabulate
 import os
 import json
 
@@ -104,7 +102,15 @@ def get_organization_info():
 def get_lots_info():
     lots = []
     page = urllib2.urlopen(link_page + '126401206')
+
+    # driver = webdriver.Firefox()
+    # driver.implicitly_wait(30)
+    # driver.get(page)
+    # button = driver.find_elements_by_class_name('.ui-row-toggler')
+    # button.click()
+
     soup = BeautifulSoup(page, 'html.parser')
+    # soup = BeautifulSoup(driver.page_source, 'html.parser')
 
     for body in soup.findAll('body'):
         content = body.find('span', {'class': 'field-groups-view m-left m-right'})
@@ -215,13 +221,13 @@ def get_pay_info():
     return jsonD.decode('unicode_escape')
 
 
-print get_general_info()
-print get_organization_info()
+# print get_general_info()
+# print get_organization_info()
 print get_lots_info()
-print get_requirements()
-print get_special_require()
-print get_special_info()
-print get_pay_info()
+# print get_requirements()
+# print get_special_require()
+# print get_special_info()
+# print get_pay_info()
 
 # for x in get_general_info():
 #     print x.decode('unicode_escape')
