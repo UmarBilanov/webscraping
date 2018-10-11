@@ -10966,3 +10966,5 @@ console.error: PushService:
 1539267450126	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
 1539267462565	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
 1539267468960	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+[Parent 7549, Gecko_IOThread] WARNING: pipe error (58): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1539267580179	Marionette	INFO	Stopped listening on port 42689
