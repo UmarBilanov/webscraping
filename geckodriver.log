@@ -11638,3 +11638,396 @@ console.error: PushService:
 1539532742095	Marionette	INFO	Stopped listening on port 34297
 [Parent 18163, Gecko_IOThread] WARNING: pipe error (67): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
 1539532744224	Marionette	INFO	Stopped listening on port 37443
+1539591212617	geckodriver	INFO	geckodriver 0.19.1
+1539591212639	geckodriver	INFO	Listening on 127.0.0.1:37903
+1539591213885	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.KUQMhhaWEV1d"
+
+(firefox:8680): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:8680): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539591218929	Marionette	INFO	Listening on port 41635
+1539591219043	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539591219103	Marionette	DEBUG	[2147483649] Frame script loaded
+1539591219136	Marionette	DEBUG	[2147483649] Frame script registered
+1539591219185	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539591219399	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539591219945	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539591220101	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539591220237	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539591220303	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539591220307	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539591220598	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539591220638	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+[Parent 8680, Gecko_IOThread] WARNING: pipe error (66): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1539591308233	Marionette	INFO	Stopped listening on port 41635
+1539591655015	geckodriver	INFO	geckodriver 0.19.1
+1539591655019	geckodriver	INFO	Listening on 127.0.0.1:44301
+1539591655164	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.LNIDZp6aPshV"
+
+(firefox:9569): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:9569): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539591663376	Marionette	INFO	Listening on port 33493
+1539591663489	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539591663551	Marionette	DEBUG	[2147483649] Frame script loaded
+1539591663582	Marionette	DEBUG	[2147483649] Frame script registered
+1539591663606	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539591663722	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539591664438	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539591664546	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539591664678	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539591664739	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539591664742	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539591665046	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539591665087	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+[Parent 9569, Gecko_IOThread] WARNING: pipe error (68): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1539591692552	Marionette	INFO	Stopped listening on port 33493
+1539593467145	geckodriver	INFO	geckodriver 0.19.1
+1539593467148	geckodriver	INFO	Listening on 127.0.0.1:34385
+1539593468247	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.cN3IaOwesshd"
+
+(firefox:10742): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:10742): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539593473846	Marionette	INFO	Listening on port 45425
+1539593473886	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539593473960	Marionette	DEBUG	[2147483649] Frame script loaded
+1539593473965	Marionette	DEBUG	[2147483649] Frame script registered
+1539593474283	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539593474678	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539593475730	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539593475884	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539593475983	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539593476050	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539593476052	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539593476332	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539593476376	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+[Parent 10742, Gecko_IOThread] WARNING: pipe error (58): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1539593492125	Marionette	INFO	Stopped listening on port 45425
+1539593496744	geckodriver	INFO	geckodriver 0.19.1
+1539593496748	geckodriver	INFO	Listening on 127.0.0.1:51639
+1539593496884	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.aSuMch5hZnHc"
+
+(firefox:10991): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:10991): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539593501052	Marionette	INFO	Listening on port 41631
+1539593501116	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539593501190	Marionette	DEBUG	[2147483649] Frame script loaded
+1539593501210	Marionette	DEBUG	[2147483649] Frame script registered
+1539593501243	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539593501781	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539593502671	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539593502827	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539593502910	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539593504008	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539593504010	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539593504315	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539593504359	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+[Parent 10991, Gecko_IOThread] WARNING: pipe error (67): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1539593533205	Marionette	INFO	Stopped listening on port 41631
+1539596270681	geckodriver	INFO	geckodriver 0.19.1
+1539596270685	geckodriver	INFO	Listening on 127.0.0.1:50589
+1539596270802	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.CNxEeBXnF9Ii"
+
+(firefox:12758): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:12758): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539596276779	Marionette	INFO	Listening on port 42173
+1539596276849	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539596276914	Marionette	DEBUG	[2147483649] Frame script loaded
+1539596276999	Marionette	DEBUG	[2147483649] Frame script registered
+1539596277023	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539596277793	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539596278610	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596278896	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596278986	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596279111	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596279115	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596279435	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539596279481	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539596303007	geckodriver	INFO	geckodriver 0.19.1
+1539596303011	geckodriver	INFO	Listening on 127.0.0.1:48585
+1539596304111	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.bABwUksqVHie"
+
+(firefox:13008): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:13008): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539596308842	Marionette	INFO	Listening on port 40925
+1539596309958	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539596310016	Marionette	DEBUG	[2147483649] Frame script loaded
+1539596310018	Marionette	DEBUG	[2147483649] Frame script registered
+1539596310057	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539596310257	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539596310911	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596311093	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596311192	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596311269	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596311272	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596311578	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539596311622	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539596498391	geckodriver	INFO	geckodriver 0.19.1
+1539596498395	geckodriver	INFO	Listening on 127.0.0.1:44933
+1539596498551	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ISi4EfZCk7CK"
+
+(firefox:13411): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:13411): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539596505769	Marionette	INFO	Listening on port 34457
+1539596505808	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539596505870	Marionette	DEBUG	[2147483649] Frame script loaded
+1539596506752	Marionette	DEBUG	[2147483649] Frame script registered
+1539596506792	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539596508182	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539596510216	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596511006	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596511161	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596511607	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596511610	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596511933	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539596511985	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539596520118	Marionette	INFO	Stopped listening on port 34457
+[Parent 13008, Gecko_IOThread] WARNING: pipe error (65): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1539596522498	Marionette	INFO	Stopped listening on port 40925
+[Parent 12758, Gecko_IOThread] WARNING: pipe error (70): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1539596524064	Marionette	INFO	Stopped listening on port 42173
+1539596700999	geckodriver	INFO	geckodriver 0.19.1
+1539596701003	geckodriver	INFO	Listening on 127.0.0.1:43385
+1539596701120	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.QhSBiGfHJUaq"
+
+(firefox:13786): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:13786): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539596705669	Marionette	INFO	Listening on port 38165
+1539596705741	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539596705806	Marionette	DEBUG	[2147483649] Frame script loaded
+1539596705832	Marionette	DEBUG	[2147483649] Frame script registered
+1539596705857	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539596706576	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539596708124	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596708290	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596708387	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596708437	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596708440	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539596708721	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539596708760	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+[Parent 13786, Gecko_IOThread] WARNING: pipe error (58): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1539596832813	Marionette	INFO	Stopped listening on port 38165
+1539597689675	geckodriver	INFO	geckodriver 0.19.1
+1539597689679	geckodriver	INFO	Listening on 127.0.0.1:46279
+1539597690787	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.iKCUCDS9KnjU"
+
+(firefox:14623): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:14623): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539597694500	Marionette	INFO	Listening on port 33141
+1539597694607	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539597694686	Marionette	DEBUG	[2147483649] Frame script loaded
+1539597694689	Marionette	DEBUG	[2147483649] Frame script registered
+1539597694738	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539597694870	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539597695919	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597696151	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597696257	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597696307	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597696311	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597696606	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539597696648	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539597737652	geckodriver	INFO	geckodriver 0.19.1
+1539597737656	geckodriver	INFO	Listening on 127.0.0.1:59419
+1539597738776	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.5KFJAA2dJCYU"
+
+(firefox:14904): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:14904): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539597742216	Marionette	INFO	Listening on port 43267
+1539597742306	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539597742368	Marionette	DEBUG	[2147483649] Frame script loaded
+1539597742369	Marionette	DEBUG	[2147483649] Frame script registered
+1539597742414	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539597742823	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539597745689	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597745844	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597745925	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597745994	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597745998	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597746289	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539597746331	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539597822779	geckodriver	INFO	geckodriver 0.19.1
+1539597822783	geckodriver	INFO	Listening on 127.0.0.1:59191
+1539597823884	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.IG0HO4auMOqf"
+
+(firefox:15182): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:15182): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539597829374	Marionette	INFO	Listening on port 40809
+1539597829431	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539597829500	Marionette	DEBUG	[2147483649] Frame script loaded
+[Parent 14904, Gecko_IOThread] WARNING: pipe error (67): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1539597830228	Marionette	DEBUG	[2147483649] Frame script registered
+1539597830271	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539597831062	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+[Parent 14623, Gecko_IOThread] WARNING: pipe error (45): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1539597832333	Marionette	INFO	Stopped listening on port 43267
+1539597833037	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597833190	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597833244	Marionette	INFO	Stopped listening on port 33141
+1539597833335	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597833418	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597833418	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597833758	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539597833791	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+[Parent 15182, Gecko_IOThread] WARNING: pipe error (73): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1539597907126	Marionette	INFO	Stopped listening on port 40809
+1539597911610	geckodriver	INFO	geckodriver 0.19.1
+1539597911614	geckodriver	INFO	Listening on 127.0.0.1:47419
+1539597912718	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.fQ8pylF3YS3s"
+
+(firefox:15497): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:15497): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539597916366	Marionette	INFO	Listening on port 40749
+1539597916442	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539597916511	Marionette	DEBUG	[2147483649] Frame script loaded
+1539597916519	Marionette	DEBUG	[2147483649] Frame script registered
+1539597916601	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539597916982	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539597918075	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597918180	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597918280	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597918347	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597918353	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597918633	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539597918678	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+[Parent 15497, Gecko_IOThread] WARNING: pipe error (67): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1539597956034	Marionette	INFO	Stopped listening on port 40749
+1539597967255	geckodriver	INFO	geckodriver 0.19.1
+1539597967258	geckodriver	INFO	Listening on 127.0.0.1:40163
+1539597968364	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.vDvTepLfh5Hu"
+
+(firefox:15807): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:15807): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539597971694	Marionette	INFO	Listening on port 35379
+1539597971827	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539597971919	Marionette	DEBUG	[2147483649] Frame script loaded
+1539597971929	Marionette	DEBUG	[2147483649] Frame script registered
+1539597971962	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539597972245	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539597973403	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597973531	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597973640	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597973685	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597973689	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539597974014	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539597974057	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+[Parent 15807, Gecko_IOThread] WARNING: pipe error (45): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1539598021992	Marionette	INFO	Stopped listening on port 35379
+1539598118731	geckodriver	INFO	geckodriver 0.19.1
+1539598118735	geckodriver	INFO	Listening on 127.0.0.1:54935
+1539598119832	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.adYW7gZssdPg"
+
+(firefox:16180): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:16180): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539598123352	Marionette	INFO	Listening on port 40091
+1539598123454	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539598123527	Marionette	DEBUG	[2147483649] Frame script loaded
+1539598123537	Marionette	DEBUG	[2147483649] Frame script registered
+1539598123602	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539598123696	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539598124238	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539598124426	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539598124509	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539598124598	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539598124600	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539598124890	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539598124931	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+[Parent 16180, Gecko_IOThread] WARNING: pipe error (67): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1539598162564	Marionette	INFO	Stopped listening on port 40091
+1539601478897	geckodriver	INFO	geckodriver 0.19.1
+1539601478901	geckodriver	INFO	Listening on 127.0.0.1:57871
+1539601480002	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ok01Il9Cjyzp"
+
+(firefox:18140): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:18140): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539601483470	Marionette	INFO	Listening on port 46389
+1539601483527	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539601483592	Marionette	DEBUG	[2147483649] Frame script loaded
+1539601483597	Marionette	DEBUG	[2147483649] Frame script registered
+1539601483712	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539601483822	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539601486386	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539601486637	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539601486724	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539601486786	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539601486791	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539601487111	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539601487152	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+[Parent 18140, Gecko_IOThread] WARNING: pipe error (58): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1539601516920	Marionette	INFO	Stopped listening on port 46389
+1539601978113	geckodriver	INFO	geckodriver 0.19.1
+1539601978117	geckodriver	INFO	Listening on 127.0.0.1:51513
+1539601979218	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.BoPltCfWRbsJ"
+
+(firefox:18734): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:18734): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539601982838	Marionette	INFO	Listening on port 41895
+1539601982958	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539601983026	Marionette	DEBUG	[2147483649] Frame script loaded
+1539601983032	Marionette	DEBUG	[2147483649] Frame script registered
+1539601983087	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539601983287	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539601984203	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539601984372	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539601984478	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539601984530	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539601984535	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539601984826	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539601984868	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+[Parent 18734, Gecko_IOThread] WARNING: pipe error (67): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1539601991985	Marionette	INFO	Stopped listening on port 41895
+1539602117984	geckodriver	INFO	geckodriver 0.19.1
+1539602117988	geckodriver	INFO	Listening on 127.0.0.1:51201
+1539602118119	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.gejl7OK5Fl4u"
+
+(firefox:19072): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:19072): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539602123033	Marionette	INFO	Listening on port 34039
+1539602123071	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539602123155	Marionette	DEBUG	[2147483649] Frame script loaded
+1539602123329	Marionette	DEBUG	[2147483649] Frame script registered
+1539602123372	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539602123473	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539602123918	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539602124046	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539602124176	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539602124238	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539602124240	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539602124548	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539602124585	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539602132935	Marionette	INFO	Stopped listening on port 34039
+1539602487072	geckodriver	INFO	geckodriver 0.19.1
+1539602487076	geckodriver	INFO	Listening on 127.0.0.1:36225
+1539602488177	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.kJtfL63FNT47"
+
+(firefox:19536): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:19536): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539602493803	Marionette	INFO	Listening on port 37213
+1539602493901	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539602493968	Marionette	DEBUG	[2147483649] Frame script loaded
+1539602493996	Marionette	DEBUG	[2147483649] Frame script registered
+1539602494633	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539602496019	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539602496766	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539602496996	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539602497256	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539602497387	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539602497392	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539602497714	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539602498003	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539602520922	Marionette	INFO	Stopped listening on port 37213

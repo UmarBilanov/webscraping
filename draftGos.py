@@ -72,7 +72,7 @@ def get_general_info():
                 resultLabel.append(smart_str(span.text))
             for span1 in div.findAll('span', {'class': 'text'}):
                 resultText.append(smart_str(span1.text))
-        gen_info = [{"title": l, "value": t} for l, t in zip(resultLabel, resultText)]
+        gen_info = [{l: t} for l, t in zip(resultLabel, resultText)]
         jsonD = json.dumps(gen_info)
 
     return jsonD.decode('unicode_escape')
@@ -94,7 +94,7 @@ def get_organization_info():
                 resultLabel.append(smart_str(span.text))
             for span1 in div.findAll('span', {'class': 'text'}):
                 resultText.append(smart_str(span1.text))
-        gen_info = [{"title": l, "value": t} for l, t in zip(resultLabel, resultText)]
+        gen_info = [{l: t} for l, t in zip(resultLabel, resultText)]
         jsonD = json.dumps(gen_info)
 
     return jsonD.decode('unicode_escape')
@@ -121,15 +121,12 @@ def get_lots_info():
                 for cell in row('td'):
                     lots.append([cell.text])
 
-    #         resultText = div.prettify()
-    #         # jsonD = json.dumps(resultText)
-    # lots = []
-    # for row in BeautifulSoup(resultText)("tr"):
-    #     lots.append([cell.text for cell in row('td')])
-    # # lots = []
-    # # for row in BeautifulSoup(resultText)('tr'):
-    # #     for cell in row('td'):
-    # #         lots = cell
+    #     for span in cell.findAll('span'):
+    #         resultLabel.append(smart_str(span.text))
+    #     for span1 in cell.findAll('span', {'class': 'bold'}):
+    #         resultText.append(smart_str(span1.text))
+    # gen_info = [{l: t} for l, t in zip(resultLabel, resultText)]
+    # jsonD = json.dumps(gen_info)
 
     jsonD = json.dumps(lots)
 
@@ -225,7 +222,7 @@ def get_special_require():
                 resultLabel.append(smart_str(span.text))
             for span1 in div.findAll('span', {'class': 'text'}):
                 resultText.append(smart_str(span1.text))
-        gen_info = [{"title": l, "value": t} for l, t in zip(resultLabel, resultText)]
+        gen_info = [{l: t} for l, t in zip(resultLabel, resultText)]
         jsonD = json.dumps(gen_info)
 
     return jsonD.decode('unicode_escape')
@@ -249,7 +246,7 @@ def get_special_info():
                 resultLabel.append(smart_str(span.text))
             for span1 in div.findAll('span', {'class': 'text'}):
                 resultText.append(smart_str(span1.text))
-        gen_info = [{"title": l, "value": t} for l, t in zip(resultLabel, resultText)]
+        gen_info = [{l: t} for l, t in zip(resultLabel, resultText)]
         jsonD = json.dumps(gen_info)
 
     return jsonD.decode('unicode_escape')
@@ -275,11 +272,11 @@ def get_pay_info():
 # print get_general_info()
 # print get_organization_info()
 # print get_lots_info()
-print get_extralots_info()
+# print get_extralots_info()
 # print get_requirements()
 # print get_special_require()
 # print get_special_info()
-# print get_pay_info()
+print get_pay_info()
 
 # for x in get_general_info():
 #     print x.decode('unicode_escape')
