@@ -12031,3 +12031,26 @@ console.error: PushService:
 1539602497714	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
 1539602498003	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
 1539602520922	Marionette	INFO	Stopped listening on port 37213
+1539857663970	geckodriver	INFO	geckodriver 0.19.1
+1539857664036	geckodriver	INFO	Listening on 127.0.0.1:56485
+1539857665160	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.uOPVYoP2FF4K"
+
+(firefox:16114): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:16114): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1539857671653	Marionette	INFO	Listening on port 40377
+1539857671707	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539857671764	Marionette	DEBUG	[2147483649] Frame script loaded
+1539857671794	Marionette	DEBUG	[2147483649] Frame script registered
+1539857671832	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1539857672188	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1539857672775	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539857672918	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539857673296	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539857673381	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539857673385	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=128014811
+1539857673725	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539857673790	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1539857686377	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1539857692791	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1539857815115	Marionette	INFO	Stopped listening on port 40377
