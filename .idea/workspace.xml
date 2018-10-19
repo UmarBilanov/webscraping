@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="75ebca36-c703-4a0d-b33a-9f9e2f1b2779" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/draftGos.py" afterPath="$PROJECT_DIR$/draftGos.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geckodriver.log" afterPath="$PROJECT_DIR$/geckodriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapingLotsGos.py" afterPath="$PROJECT_DIR$/scrapingLotsGos.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -542,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539946311655</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="criteria">
+      <created>1539960404886</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1539960404886</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -591,7 +595,8 @@
     <MESSAGE value="dataStructure" />
     <MESSAGE value="dataStructure1" />
     <MESSAGE value="draft" />
-    <option name="LAST_COMMIT_MESSAGE" value="draft" />
+    <MESSAGE value="criteria" />
+    <option name="LAST_COMMIT_MESSAGE" value="criteria" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
