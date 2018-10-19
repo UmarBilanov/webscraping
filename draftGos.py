@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import urllib2
 
 from django.utils.encoding import smart_str
@@ -77,7 +78,6 @@ def get_general_info():
 
     return jsonD.decode('unicode_escape')
 
-
 def get_organization_info():
     resultLabel = []
     resultText = []
@@ -99,16 +99,11 @@ def get_organization_info():
 
     return jsonD.decode('unicode_escape')
 
-
 def get_lots_info():
-    lots = []
+    resultLabel = ['№', 'Наименование лота', 'Сумма', 'Адрес и Место поставки', 'Сроки поставки товара ']
+    resultText = []
+    gen_info = {}
     page = urllib2.urlopen(link_page + '126401206')
-
-    # driver = webdriver.Firefox()
-    # driver.implicitly_wait(30)
-    # driver.get(page)
-    # button = driver.find_elements_by_class_name('.ui-row-toggler')
-    # button.click()
 
     soup = BeautifulSoup(page, 'html.parser')
     # soup = BeautifulSoup(driver.page_source, 'html.parser')
@@ -116,20 +111,23 @@ def get_lots_info():
     for body in soup.findAll('body'):
         content = body.find('span', {'class': 'field-groups-view m-left m-right'})
         for div in content.findAll('tbody', {'class': 'ui-datatable-data'}):
-            resultText = div.prettify()
-            for row in BeautifulSoup(resultText)('tr'):
+            for row in div('tr'):
                 for cell in row('td'):
-                    lots.append([cell.text])
+                    for span in cell.findAll('span', {'class': 'bold'}):
+                        resultText.append(span.text)
 
-    #     for span in cell.findAll('span'):
-    #         resultLabel.append(smart_str(span.text))
-    #     for span1 in cell.findAll('span', {'class': 'bold'}):
-    #         resultText.append(smart_str(span1.text))
-    # gen_info = [{l: t} for l, t in zip(resultLabel, resultText)]
-    # jsonD = json.dumps(gen_info)
+    list_of_lists = [resultText[i:i + 5] for i in range(0, len(resultText), 5)]
+    # jsonT = json.dumps(list_of_lists)
+    # print jsonT.decode('unicode_escape')
 
-    jsonD = json.dumps(lots)
+    list_of_lists.append(resultLabel)
+    # jsonL = json.dumps(list_of_lists)
+    # print jsonL.decode('unicode_escape')
+    l = len(list_of_lists)
+    gen_info = {z[l-1]: list(z[0:l-2]) for z in zip(*list_of_lists)}
 
+    # gen_info = [{z[0]: list(z[1:])} for z in zip(resultLabel, list_of_texts)]
+    jsonD = json.dumps(gen_info)
     return jsonD.decode('unicode_escape')
 
 def get_extralots_info():
@@ -182,27 +180,51 @@ def get_extralots_info():
     jsonD = json.dumps(lots)
     return jsonD.decode('unicode_escape')
 
-
 def get_requirements():
-    resultLabel = []
+    resultLabel = ['Квалификация', 'Требование']
     resultText = []
-    lots = []
     page = urllib2.urlopen(link_page + '126401206')
     soup = BeautifulSoup(page, 'html.parser')
 
     for body in soup.findAll('body'):
-        for div in body.findAll('table', {'class': 'publicTableData'}):
-            # for thead in div.findAll('thead'):
-            #     resultLabel.append(smart_str(thead.text))
-            for tbody in div.findAll('tbody'):
-                resultText.append(smart_str(tbody.text))
-        # gen_info = [{"title": l, "value": t} for l, t in zip(resultLabel, resultText)]
-        jsonD = json.dumps(resultText)
-            # resultText = div.prettify()
-            # lots.append([resultText.text])
+        div = body.find('table', {'class': 'publicTableData'})
+        for tbody in div.findAll('tbody'):
+            for cell in tbody('td'):
+                resultText.append(smart_str(cell.text))
 
-    # jsonD = json.dumps(lots)
+    list_of_lists = []
+    resultClass = resultText[1::3]
+    resultReq = resultText[2::3]
+    list_of_lists.append(resultClass)
+    list_of_lists.append(resultReq)
+    # list_of_lists.append(resultLabel)
 
+    # l = len(list_of_lists)
+    # gen_info = {z[l - 1]: list(z[0:l - 2]) for z in zip(*list_of_lists)}
+    #
+    gen_info = [{z[0]: z[1:]} for z in zip(resultLabel, list_of_lists)]
+    jsonD = json.dumps(gen_info)
+    return jsonD.decode('unicode_escape')
+
+def get_criteria():
+    resultText = []
+    page = urllib2.urlopen(link_page + '126401206')
+    soup = BeautifulSoup(page, 'html.parser')
+
+    for body in soup.findAll('body'):
+        div = body.find('table', {'class': 'publicTableData equal'})
+        for tbody in div.findAll('tbody'):
+            for cell in tbody('td'):
+                resultText.append(smart_str(cell.text))
+
+    # jsonD = json.dumps(resultText)
+    # print jsonD.decode('unicode_escape')
+
+    l = resultText[0::2]
+    t = resultText[1::2]
+
+    gen_info = [{l: t} for l, t in zip(l, t)]
+    jsonD = json.dumps(gen_info)
     return jsonD.decode('unicode_escape')
 
 def get_special_require():
@@ -252,31 +274,38 @@ def get_special_info():
     return jsonD.decode('unicode_escape')
 
 def get_pay_info():
-    resultLabel = []
     resultText = []
     page = urllib2.urlopen(link_page + '126401206')
     soup = BeautifulSoup(page, 'html.parser')
 
     for body in soup.findAll('body'):
         for div in body.findAll('div', {'class': 'row no-gutters'}):
-            # for thead in div.findAll('thead'):
-            #     resultLabel.append(smart_str(thead.text))
             for tbody in div.findAll('tbody'):
-                resultText.append(smart_str(tbody.text))
-        # gen_info = [{"title": l, "value": t} for l, t in zip(resultLabel, resultText)]
-        jsonD = json.dumps(resultText)
+                for cell in tbody('td'):
+                    resultText.append(smart_str(cell.text))
 
+    l = resultText[0::2]
+    t = resultText[1::2]
+
+    gen_info = [{l: t} for l, t in zip(l, t)]
+    jsonD = json.dumps(gen_info)
     return jsonD.decode('unicode_escape')
 
 
+# finished
 # print get_general_info()
 # print get_organization_info()
-print get_lots_info()
-# print get_extralots_info()
+# print get_lots_info()
 # print get_requirements()
 # print get_special_require()
+# print get_criteria()
 # print get_special_info()
 # print get_pay_info()
+
+# processing
+print get_extralots_info()
+
+
 
 # for x in get_general_info():
 #     print x.decode('unicode_escape')
