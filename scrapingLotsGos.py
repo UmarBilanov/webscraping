@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
 import json
 import urllib2
-
+import pymongo
 import xmltodict
+import time
+
 from bs4 import BeautifulSoup
 from django.utils.encoding import smart_str
 from selenium import webdriver
-import time
+from pymongo import MongoClient
+
 
 link_page = 'http://zakupki.gov.kg/popp/view/order/view.xhtml?id='
 
@@ -15,10 +18,9 @@ def get_lots_info():
     resultLabel = ['№', 'Наименование лота', 'Сумма', 'Адрес и Место поставки', 'Сроки поставки товара ']
     resultText = []
     gen_info = {}
-    page = urllib2.urlopen(link_page + '126401206')
+    page = urllib2.urlopen(link_page + '130452757')
 
     soup = BeautifulSoup(page, 'html.parser')
-    # soup = BeautifulSoup(driver.page_source, 'html.parser')
 
     for body in soup.findAll('body'):
         content = body.find('span', {'class': 'field-groups-view m-left m-right'})
@@ -29,18 +31,13 @@ def get_lots_info():
                         resultText.append(span.text)
 
     list_of_lists = [resultText[i:i + 5] for i in range(0, len(resultText), 5)]
-    # jsonT = json.dumps(list_of_lists)
-    # print jsonT.decode('unicode_escape')
 
     list_of_lists.append(resultLabel)
-    # jsonL = json.dumps(list_of_lists)
-    # print jsonL.decode('unicode_escape')
     l = len(list_of_lists)
-    gen_info = {z[l - 1]: list(z[0:l - 2]) for z in zip(*list_of_lists)}
+    gen_info = {z[l-1]: z[0:l-2] for z in zip(*list_of_lists)}
 
-    # gen_info = [{z[0]: list(z[1:])} for z in zip(resultLabel, list_of_texts)]
     jsonD = json.dumps(gen_info)
-    print jsonD.decode('unicode_escape')
+    return jsonD.decode('unicode_escape')
 
 
 def get_pay_info():
@@ -59,13 +56,13 @@ def get_pay_info():
 
     gen_info = [{l: t} for l, t in zip(l, t)]
     jsonD = json.dumps(gen_info)
-    print jsonD.decode('unicode_escape')
+    return jsonD.decode('unicode_escape')
 
 
 def get_requirements():
-    resultLabel = ['Квалификация', 'Требование']
+    # resultLabel = ['Квалификация', 'Требование']
     resultText = []
-    page = urllib2.urlopen(link_page + '126401206')
+    page = urllib2.urlopen(link_page + '130452757')
     soup = BeautifulSoup(page, 'html.parser')
 
     for body in soup.findAll('body'):
@@ -74,19 +71,12 @@ def get_requirements():
             for cell in tbody('td'):
                 resultText.append(smart_str(cell.text))
 
-    list_of_lists = []
     resultClass = resultText[1::3]
     resultReq = resultText[2::3]
-    list_of_lists.append(resultClass)
-    list_of_lists.append(resultReq)
-    # list_of_lists.append(resultLabel)
 
-    # l = len(list_of_lists)
-    # gen_info = {z[l - 1]: list(z[0:l - 2]) for z in zip(*list_of_lists)}
-    #
-    gen_info = [{z[0]: z[1:]} for z in zip(resultLabel, list_of_lists)]
+    gen_info = [{'Квалификация': c, 'Требование': t} for c, t in zip(resultClass, resultReq)]
     jsonD = json.dumps(gen_info)
-    print jsonD.decode('unicode_escape')
+    return jsonD.decode('unicode_escape')
 
     # for div in body.findNextSiblings('table', {'class': 'publicTableData'}):
 
@@ -110,11 +100,13 @@ def get_criteria():
 
     gen_info = [{l: t} for l, t in zip(l, t)]
     jsonD = json.dumps(gen_info)
-    print jsonD.decode('unicode_escape')
+    return jsonD.decode('unicode_escape')
 
 
 def get_extralots_info():
-    lots = []
+    # lots = []
+    resultLabel = []
+    resultText = []
     # data_ri = []
     page = link_page + '128014811'
 
@@ -154,26 +146,57 @@ def get_extralots_info():
             for div in content.findAll('tbody', {'class': 'ui-datatable-data'}):
                 for row in div.findAll('tr', {'class': 'ui-expanded-row-content ui-widget-content childRowFillBG'}):
                     for table in row.findAll('table', {'class': 'display-table private-room-table no-borders f-right'}):
-                        lots.append([table.text])
+                        for th in table('th'):
+                            resultLabel.append(smart_str(th.text))
+                        for td in table('td'):
+                            resultText.append(smart_str(td.text))
         if a == b:
             break
 
-    jsonD = json.dumps(lots)
+    gen_info = [{l: t} for l, t in zip(resultLabel, resultText)]
+    jsonD = json.dumps(gen_info)
+
     return jsonD.decode('unicode_escape')
 
-# get_lots_info()
+def inserting_to_DB():
+    myclient = pymongo.MongoClient('mongodb://localhost:27017/')
+    mydb = myclient['mydatabase']
+    mycol = mydb["GosTenders"]
+
+    mydict = {"criteria": get_criteria(), "extralots": get_extralots_info()}
+
+    x = mycol.insert_one(mydict)
+    cursor = mycol.find()
+    for record in cursor:
+        print(record)
+
+
+print get_lots_info()
 # get_pay_info()
-# get_requirements()
-get_criteria()
-print get_extralots_info()
+print get_requirements()
+# print get_criteria()
+# print get_extralots_info()
+# inserting_to_DB()
 
-# myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-# mydb = myclient["mydatabase"]
-# mycol = mydb["customers"]
-#
-# mylist = []
-# mylist = jsonD.decode('unicode_escape')
-#
-# x = mycol.insert_many(mylist)
 
-# print(x)
+# def get_requirements():
+#     resultLabel = ['Квалификация', 'Требование']
+#     resultText = []
+#     page = urllib2.urlopen(link_page + '130452757')
+#     soup = BeautifulSoup(page, 'html.parser')
+#
+#     for body in soup.findAll('body'):
+#         div = body.find('table', {'class': 'publicTableData'})
+#         for tbody in div.findAll('tbody'):
+#             for cell in tbody('td'):
+#                 resultText.append(smart_str(cell.text))
+#
+#     list_of_lists = []
+#     resultClass = resultText[1::3]
+#     resultReq = resultText[2::3]
+#     list_of_lists.append(resultClass)
+#     list_of_lists.append(resultReq)
+#
+#     gen_info = {z[0]: z[1:] for z in zip(resultLabel, list_of_lists)}
+#     jsonD = json.dumps(gen_info)
+#     # return jsonD.decode('unicode_escape')
