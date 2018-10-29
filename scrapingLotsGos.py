@@ -11,8 +11,6 @@ import os
 import json
 import time
 
-# list_page = 'http://zakupki.gov.kg/popp/view/order/list.xhtml'
-
 link_page = 'http://zakupki.gov.kg/popp/view/order/view.xhtml?id='
 
 def get_lots_info():
@@ -69,16 +67,16 @@ def get_lots_info():
                     for td in table('td'):
                         resultText.append(smart_str(td.text))
 
-    list_of_lists = [lots[i:i + 5] for i in range(0, len(lots), 5)]
+    list_of_lots = [lots[i:i + 5] for i in range(0, len(lots), 5)]
     # jsonD = json.dumps(lots)
     lotsSpecifies = [{l: t} for l, t in zip(resultLabel, resultText)]
-    # gen_info =
-    jsonD = json.dumps(list_of_lists)
+    list_of_spec = [lotsSpecifies[i:i + 5] for i in range(0, len(lotsSpecifies), 5)]
+    gen_info = [{'№': l[0:i][0], 'Наименование лота': l[0:i][1], 'Сумма': l[0:i][2], 'Адрес и Место поставки': l[0:i][3], 'Сроки поставки товара': l[0:i][4], 'techSpecifies': t} for l, t in zip(list_of_lots, list_of_spec)]
+    jsonD = json.dumps(gen_info)
 
     print jsonD.decode('unicode_escape')
 
     driver.close()
-
 
 
 # def geting_lots_info():
