@@ -13332,3 +13332,620 @@ JavaScript error: resource:///modules/SavantShieldStudy.jsm, line 171: TypeError
 1540552706017	Marionette	INFO	Stopped listening on port 33947
 [Parent 12993, Gecko_IOThread] WARNING: pipe error (65): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
 1540552709176	Marionette	INFO	Stopped listening on port 45365
+1540556742448	geckodriver	INFO	geckodriver 0.19.1
+1540556742462	geckodriver	INFO	Listening on 127.0.0.1:49945
+1540556743651	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.gHmXQCwuuEXN"
+
+(firefox:16618): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:16618): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540556748517	Marionette	INFO	Listening on port 36483
+1540556748587	Marionette	WARN	TLS certificate errors will be ignored for this session
+1540556748655	Marionette	DEBUG	[2147483649] Frame script loaded
+1540556748705	Marionette	DEBUG	[2147483649] Frame script registered
+1540556748756	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1540556748862	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1540556749687	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=130452757
+1540556749866	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=130452757
+1540556749968	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=130452757
+1540556750048	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=130452757
+1540556750051	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=130452757
+1540556750411	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1540556750484	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1540556761890	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1540556768311	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1540556774715	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1540556781164	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1540556787581	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1540556793979	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1540556796924	geckodriver	INFO	geckodriver 0.19.1
+1540556796927	geckodriver	INFO	Listening on 127.0.0.1:40371
+1540556798023	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.fBXnHwx65as3"
+
+(firefox:16898): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:16898): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540556801394	Marionette	INFO	Listening on port 33993
+1540556801454	Marionette	WARN	TLS certificate errors will be ignored for this session
+1540556801507	Marionette	DEBUG	[2147483649] Frame script loaded
+1540556801610	Marionette	DEBUG	[2147483649] Frame script registered
+1540556801661	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1540556801832	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1540556802479	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=130452757
+1540556802666	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=130452757
+1540556802784	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=130452757
+1540556802910	Marionette	DEBUG	[2147483649] Received DOM event pagehide for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=130452757
+1540556802918	Marionette	DEBUG	[2147483649] Received DOM event unload for http://zakupki.gov.kg/popp/view/order/view.xhtml?id=130452757
+1540556803279	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1540556803353	Marionette	DEBUG	[2147483649] Received DOM event pageshow for http://zakupki.gov.kg/popp/view/order/view.xhtml?cid=1
+1540556814765	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1540556821183	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1540556827607	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1540556834006	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1540556840385	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1540556846812	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+[Parent 16898, Gecko_IOThread] WARNING: pipe error (65): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1540557202753	Marionette	INFO	Stopped listening on port 33993
+[Parent 16618, Gecko_IOThread] WARNING: pipe error (59): Connection reset by peer: file /build/firefox-E5azaL/firefox-62.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1540557204742	Marionette	INFO	Stopped listening on port 36483
+1540815995507	geckodriver	INFO	geckodriver 0.19.1
+1540815995544	geckodriver	INFO	Listening on 127.0.0.1:49137
+1540815996698	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.yEBa0UmXPeo0"
+1540815997354	Marionette	DEBUG	Received observer notification profile-after-change
+1540815997754	Marionette	DEBUG	Received observer notification command-line-startup
+1540815997754	Marionette	DEBUG	Received observer notification nsPref:changed
+1540815997755	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:9464): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:9464): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540815998599	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1540816000338	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1540816000338	Marionette	DEBUG	Waiting for delayed startup...
+1540816000558	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1540816000558	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1540816000559	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1540816000560	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1540816000560	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1540816000776	Marionette	INFO	Listening on port 36441
+1540816000777	Marionette	DEBUG	Remote service is active
+1540816000814	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:53900
+1540816000832	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1540816000833	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1540816043122	geckodriver	INFO	geckodriver 0.19.1
+1540816043126	geckodriver	INFO	Listening on 127.0.0.1:42599
+1540816044229	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.jsrDkiWQRrs4"
+1540816044817	Marionette	DEBUG	Received observer notification profile-after-change
+1540816045138	Marionette	DEBUG	Received observer notification command-line-startup
+1540816045138	Marionette	DEBUG	Received observer notification nsPref:changed
+1540816045138	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:9727): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:9727): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540816045955	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1540816047264	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1540816047265	Marionette	DEBUG	Waiting for delayed startup...
+1540816047459	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1540816047459	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1540816047461	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1540816047462	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1540816047462	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1540816047533	Marionette	INFO	Listening on port 34753
+1540816047534	Marionette	DEBUG	Remote service is active
+1540816047546	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:50234
+1540816047550	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1540816047551	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+[Child 9909, Chrome_ChildThread] WARNING: pipe error (44): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 9909, Chrome_ChildThread] WARNING: pipe error (43): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 9909, Chrome_ChildThread] WARNING: pipe error (41): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 9909, Chrome_ChildThread] WARNING: pipe error (40): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 9909, Chrome_ChildThread] WARNING: pipe error (39): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 9909, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1540816107103	geckodriver	INFO	geckodriver 0.19.1
+1540816107107	geckodriver	INFO	Listening on 127.0.0.1:54229
+1540816108207	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.WQzy9f2IBaWv"
+1540816108771	Marionette	DEBUG	Received observer notification profile-after-change
+1540816109137	Marionette	DEBUG	Received observer notification command-line-startup
+1540816109137	Marionette	DEBUG	Received observer notification nsPref:changed
+1540816109137	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:10006): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:10006): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540816109897	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1540816111165	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1540816111166	Marionette	DEBUG	Waiting for delayed startup...
+1540816111396	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1540816111397	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1540816111398	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1540816111398	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1540816111399	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1540816111455	Marionette	INFO	Listening on port 46381
+1540816111455	Marionette	DEBUG	Remote service is active
+1540816111570	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:36320
+1540816111573	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1540816111574	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+[Child 10120, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1540816161568	geckodriver	INFO	geckodriver 0.19.1
+1540816161571	geckodriver	INFO	Listening on 127.0.0.1:42411
+1540816162681	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.r1xWLz97ba9v"
+1540816163249	Marionette	DEBUG	Received observer notification profile-after-change
+1540816163567	Marionette	DEBUG	Received observer notification command-line-startup
+1540816163567	Marionette	DEBUG	Received observer notification nsPref:changed
+1540816163567	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:10282): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:10282): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540816164386	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1540816165563	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1540816165563	Marionette	DEBUG	Waiting for delayed startup...
+1540816165737	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1540816165737	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1540816165738	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1540816165739	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1540816165739	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1540816165790	Marionette	INFO	Listening on port 38907
+1540816165790	Marionette	DEBUG	Remote service is active
+1540816165796	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:59662
+1540816165799	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1540816165800	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1540816242440	geckodriver	INFO	geckodriver 0.19.1
+1540816242443	geckodriver	INFO	Listening on 127.0.0.1:37555
+1540816243546	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.yBTDSpKV2xrA"
+1540816244121	Marionette	DEBUG	Received observer notification profile-after-change
+1540816244476	Marionette	DEBUG	Received observer notification command-line-startup
+1540816244477	Marionette	DEBUG	Received observer notification nsPref:changed
+1540816244477	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:10533): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:10533): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540816245258	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1540816246562	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1540816246563	Marionette	DEBUG	Waiting for delayed startup...
+1540816246784	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1540816246784	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1540816246785	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1540816246786	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1540816246786	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1540816246841	Marionette	INFO	Listening on port 46205
+1540816246841	Marionette	DEBUG	Remote service is active
+1540816246858	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:37202
+1540816246875	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1540816246876	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+[Child 10714, Chrome_ChildThread] WARNING: pipe error (45): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 10714, Chrome_ChildThread] WARNING: pipe error (44): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 10714, Chrome_ChildThread] WARNING: pipe error (43): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 10714, Chrome_ChildThread] WARNING: pipe error (48): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 10714, Chrome_ChildThread] WARNING: pipe error (47): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1540816314420	geckodriver	INFO	geckodriver 0.19.1
+1540816314424	geckodriver	INFO	Listening on 127.0.0.1:35675
+1540816315527	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.DS7pOQ0VUNB5"
+1540816316098	Marionette	DEBUG	Received observer notification profile-after-change
+1540816316437	Marionette	DEBUG	Received observer notification command-line-startup
+1540816316437	Marionette	DEBUG	Received observer notification nsPref:changed
+1540816316437	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:10797): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:10797): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540816317211	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1540816318583	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1540816318583	Marionette	DEBUG	Waiting for delayed startup...
+1540816318796	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1540816318796	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1540816318797	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1540816318798	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1540816318798	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1540816318857	Marionette	INFO	Listening on port 43239
+1540816318858	Marionette	DEBUG	Remote service is active
+1540816318938	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:41520
+1540816318941	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1540816318941	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1540816368924	geckodriver	INFO	geckodriver 0.19.1
+1540816368930	geckodriver	INFO	Listening on 127.0.0.1:54785
+1540816370029	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.XbY74eYYp3xy"
+1540816370627	Marionette	DEBUG	Received observer notification profile-after-change
+1540816370937	Marionette	DEBUG	Received observer notification command-line-startup
+1540816370937	Marionette	DEBUG	Received observer notification nsPref:changed
+1540816370937	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:11091): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:11091): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540816372072	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1540816373321	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1540816373321	Marionette	DEBUG	Waiting for delayed startup...
+1540816373553	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1540816373553	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1540816373554	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1540816373555	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1540816373555	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1540816373611	Marionette	INFO	Listening on port 36607
+1540816373611	Marionette	DEBUG	Remote service is active
+1540816373645	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:35688
+1540816373649	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1540816373649	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+[Child 11284, Chrome_ChildThread] WARNING: pipe error (41): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 11284, Chrome_ChildThread] WARNING: pipe error (48): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 11284, Chrome_ChildThread] WARNING: pipe error (40): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 11284, Chrome_ChildThread] WARNING: pipe error (47): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 11284, Chrome_ChildThread] WARNING: pipe error (39): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1540816486442	geckodriver	INFO	geckodriver 0.19.1
+1540816486446	geckodriver	INFO	Listening on 127.0.0.1:51003
+1540816487550	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Hxnzf48kMFy7"
+1540816488109	Marionette	DEBUG	Received observer notification profile-after-change
+1540816488502	Marionette	DEBUG	Received observer notification command-line-startup
+1540816488502	Marionette	DEBUG	Received observer notification nsPref:changed
+1540816488502	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:11406): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:11406): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540816489242	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1540816490471	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1540816490471	Marionette	DEBUG	Waiting for delayed startup...
+1540816490707	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1540816490707	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1540816490708	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1540816490709	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1540816490709	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1540816490766	Marionette	INFO	Listening on port 37487
+1540816490767	Marionette	DEBUG	Remote service is active
+1540816490862	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:43786
+1540816490869	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1540816490870	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1540817473985	geckodriver	INFO	geckodriver 0.19.1
+1540817473989	geckodriver	INFO	Listening on 127.0.0.1:51667
+1540817475084	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.IKCuzzFodkAc"
+1540817475746	Marionette	DEBUG	Received observer notification profile-after-change
+1540817476058	Marionette	DEBUG	Received observer notification command-line-startup
+1540817476059	Marionette	DEBUG	Received observer notification nsPref:changed
+1540817476059	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:12320): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:12320): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540817476842	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1540817478079	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1540817478080	Marionette	DEBUG	Waiting for delayed startup...
+1540817478364	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1540817478365	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1540817478366	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1540817478366	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1540817478367	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1540817478423	Marionette	INFO	Listening on port 35461
+1540817478424	Marionette	DEBUG	Remote service is active
+1540817478496	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:57328
+1540817478498	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1540817478498	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+[Child 12502, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 12436, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1540817706143	geckodriver	INFO	geckodriver 0.19.1
+1540817706147	geckodriver	INFO	Listening on 127.0.0.1:35279
+1540817707253	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.LZYV8s98RBYT"
+1540817707827	Marionette	DEBUG	Received observer notification profile-after-change
+1540817708205	Marionette	DEBUG	Received observer notification command-line-startup
+1540817708205	Marionette	DEBUG	Received observer notification nsPref:changed
+1540817708205	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:12678): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:12678): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540817708978	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1540817710133	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1540817710134	Marionette	DEBUG	Waiting for delayed startup...
+1540817710321	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1540817710322	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1540817710323	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1540817710323	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1540817710324	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1540817710401	Marionette	INFO	Listening on port 36823
+1540817710401	Marionette	DEBUG	Remote service is active
+1540817710466	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:37944
+1540817710468	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1540817710469	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1540818106577	geckodriver	INFO	geckodriver 0.19.1
+1540818106580	geckodriver	INFO	Listening on 127.0.0.1:35363
+1540818107687	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.BYlzHc2qYskZ"
+1540818108288	Marionette	DEBUG	Received observer notification profile-after-change
+1540818108602	Marionette	DEBUG	Received observer notification command-line-startup
+1540818108602	Marionette	DEBUG	Received observer notification nsPref:changed
+1540818108602	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:13085): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:13085): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540818109418	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1540818110700	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1540818110700	Marionette	DEBUG	Waiting for delayed startup...
+1540818110962	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1540818110962	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1540818110964	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1540818110964	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1540818110965	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1540818111030	Marionette	INFO	Listening on port 33175
+1540818111030	Marionette	DEBUG	Remote service is active
+1540818111105	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:41784
+1540818111110	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1540818111110	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1540818162567	geckodriver	INFO	geckodriver 0.19.1
+1540818162571	geckodriver	INFO	Listening on 127.0.0.1:34347
+1540818163827	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.oL2hSald7UEs"
+1540818164409	Marionette	DEBUG	Received observer notification profile-after-change
+1540818164791	Marionette	DEBUG	Received observer notification command-line-startup
+1540818164791	Marionette	DEBUG	Received observer notification nsPref:changed
+1540818164791	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:13576): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:13576): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540818165591	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1540818166971	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1540818166971	Marionette	DEBUG	Waiting for delayed startup...
+1540818167231	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1540818167231	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1540818167234	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1540818167235	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1540818167236	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1540818167362	Marionette	INFO	Listening on port 42281
+1540818167362	Marionette	DEBUG	Remote service is active
+1540818167449	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:34082
+1540818167452	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1540818167453	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1540818222496	geckodriver	INFO	geckodriver 0.19.1
+1540818222500	geckodriver	INFO	Listening on 127.0.0.1:37727
+1540818223601	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.d40T2OWBJcGj"
+1540818224175	Marionette	DEBUG	Received observer notification profile-after-change
+1540818224476	Marionette	DEBUG	Received observer notification command-line-startup
+1540818224476	Marionette	DEBUG	Received observer notification nsPref:changed
+1540818224476	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:14105): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:14105): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540818225390	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1540818226691	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1540818226691	Marionette	DEBUG	Waiting for delayed startup...
+1540818226996	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1540818226997	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1540818226998	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1540818227003	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1540818227003	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1540818227094	Marionette	INFO	Listening on port 33831
+1540818227095	Marionette	DEBUG	Remote service is active
+1540818227117	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:39668
+1540818227122	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1540818227122	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+[Child 14276, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1540818608276	geckodriver	INFO	geckodriver 0.19.1
+1540818608280	geckodriver	INFO	Listening on 127.0.0.1:35339
+1540818609383	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.W9gLxOgaW2wi"
+1540818610016	Marionette	DEBUG	Received observer notification profile-after-change
+1540818610603	Marionette	DEBUG	Received observer notification command-line-startup
+1540818610603	Marionette	DEBUG	Received observer notification nsPref:changed
+1540818610603	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:15389): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:15389): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540818611375	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1540818612657	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1540818612658	Marionette	DEBUG	Waiting for delayed startup...
+1540818612974	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1540818612975	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1540818612976	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1540818612977	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1540818612978	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1540818613069	Marionette	INFO	Listening on port 33171
+1540818613069	Marionette	DEBUG	Remote service is active
+1540818613101	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:44010
+1540818613106	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1540818613106	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+[Child 15568, Chrome_ChildThread] WARNING: pipe error (48): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 15503, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1540820474154	geckodriver	INFO	geckodriver 0.19.1
+1540820474159	geckodriver	INFO	Listening on 127.0.0.1:54087
+1540820475388	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.k8lG2FV8G8Tu"
+1540820476442	Marionette	DEBUG	Received observer notification profile-after-change
+1540820476812	Marionette	DEBUG	Received observer notification command-line-startup
+1540820476812	Marionette	DEBUG	Received observer notification nsPref:changed
+1540820476812	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:16680): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:16680): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540820477925	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1540820479332	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1540820479332	Marionette	DEBUG	Waiting for delayed startup...
+1540820479621	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1540820479621	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1540820479622	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1540820479623	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1540820479623	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1540820479681	Marionette	INFO	Listening on port 34523
+1540820479681	Marionette	DEBUG	Remote service is active
+1540820479709	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:45758
+1540820479714	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1540820479715	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1540820824608	geckodriver	INFO	geckodriver 0.19.1
+1540820824657	geckodriver	INFO	Listening on 127.0.0.1:46727
+1540820825833	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.klOoCVeTdiOt"
+1540820828689	Marionette	DEBUG	Received observer notification profile-after-change
+1540820829442	Marionette	DEBUG	Received observer notification command-line-startup
+1540820829442	Marionette	DEBUG	Received observer notification nsPref:changed
+1540820829442	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:4144): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:4144): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540820830582	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1540820834746	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1540820834746	Marionette	DEBUG	Waiting for delayed startup...
+1540820835193	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1540820835193	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1540820835195	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1540820835196	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1540820835197	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1540820835442	Marionette	INFO	Listening on port 40937
+1540820835442	Marionette	DEBUG	Remote service is active
+1540820835524	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:56440
+1540820835535	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1540820835536	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1540821233710	geckodriver	INFO	geckodriver 0.19.1
+1540821233714	geckodriver	INFO	Listening on 127.0.0.1:48709
+1540821234816	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ilJQZttsxJas"
+1540821235382	Marionette	DEBUG	Received observer notification profile-after-change
+1540821235727	Marionette	DEBUG	Received observer notification command-line-startup
+1540821235728	Marionette	DEBUG	Received observer notification nsPref:changed
+1540821235728	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:5940): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:5940): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540821236537	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1540821237954	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1540821237954	Marionette	DEBUG	Waiting for delayed startup...
+1540821238159	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1540821238160	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1540821238161	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1540821238162	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1540821238163	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1540821238219	Marionette	INFO	Listening on port 33745
+1540821238220	Marionette	DEBUG	Remote service is active
+1540821238230	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:43848
+1540821238240	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1540821238241	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+[Child 6123, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1540822468432	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.pPkwKMuLsq2U"
+
+(firefox:6944): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:6944): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540822471960	Marionette	INFO	Listening on port 39941
+1540822472051	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 6944, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 6944, Gecko_IOThread] WARNING: pipe error (70): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1540822526888	Marionette	INFO	Stopped listening on port 39941
+1540823022436	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0kijgLSWg4jT"
+
+(firefox:7586): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:7586): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540823025919	Marionette	INFO	Listening on port 42113
+1540823025954	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 7586, Gecko_IOThread] WARNING: pipe error (86): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 7586, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1540823050425	Marionette	INFO	Stopped listening on port 42113
+1540823183188	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ASVuCDdY83uv"
+
+(firefox:8236): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:8236): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540823186698	Marionette	INFO	Listening on port 38649
+1540823186820	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 8236, Gecko_IOThread] WARNING: pipe error (86): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 8236, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1540823200665	Marionette	INFO	Stopped listening on port 38649
+1540823248584	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.00xBQGvns9QY"
+
+(firefox:8506): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:8506): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540823251782	Marionette	INFO	Listening on port 38637
+1540823251798	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 8506, Gecko_IOThread] WARNING: pipe error (39): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 8506, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1540823640075	Marionette	INFO	Stopped listening on port 38637
+1540823643268	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.qFRQFhc9HfKn"
+
+(firefox:8958): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:8958): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540823647042	Marionette	INFO	Listening on port 37075
+1540823647092	Marionette	WARN	TLS certificate errors will be ignored for this session
+1540823901902	Marionette	INFO	Stopped listening on port 37075
+1540823950013	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.79OMNQfY1AAt"
+
+(firefox:9416): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:9416): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540823953471	Marionette	INFO	Listening on port 40185
+1540823953528	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 9416, Gecko_IOThread] WARNING: pipe error (81): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 9416, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1540823976182	Marionette	INFO	Stopped listening on port 40185
+1540824005768	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.zyLwipubN1r0"
+
+(firefox:9703): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:9703): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540824009455	Marionette	INFO	Listening on port 33739
+1540824009485	Marionette	WARN	TLS certificate errors will be ignored for this session
+1540824116590	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kiBnNdQBuz7c"
+
+(firefox:10000): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:10000): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540824119918	Marionette	INFO	Listening on port 34373
+1540824120007	Marionette	WARN	TLS certificate errors will be ignored for this session
+1540824412467	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6Px4dM1LCBvB"
+
+(firefox:10504): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:10504): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540824418769	Marionette	INFO	Listening on port 41425
+1540824418800	Marionette	WARN	TLS certificate errors will be ignored for this session
+1540824616844	Marionette	INFO	Stopped listening on port 41425
+1540824619343	Marionette	INFO	Stopped listening on port 34373
+[Parent 9703, Gecko_IOThread] WARNING: pipe error (84): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 9703, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1540824622336	Marionette	INFO	Stopped listening on port 33739
+1540824710855	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.XRLQ3RwJcUy4"
+
+(firefox:10994): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:10994): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540824715571	Marionette	INFO	Listening on port 43539
+1540824715675	Marionette	WARN	TLS certificate errors will be ignored for this session
+1540824760272	Marionette	INFO	Stopped listening on port 43539
+[Parent 10994, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1540825284129	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.MAGARvwYmQBP"
+
+(firefox:11571): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:11571): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540825287428	Marionette	INFO	Listening on port 39479
+1540825287442	Marionette	WARN	TLS certificate errors will be ignored for this session
+1540825332056	Marionette	INFO	Stopped listening on port 39479
+[Parent 11571, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1540825434909	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.LDn2MoHBUKd6"
+
+(firefox:11930): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:11930): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540825438323	Marionette	INFO	Listening on port 45477
+1540825438441	Marionette	WARN	TLS certificate errors will be ignored for this session
+1540825483042	Marionette	INFO	Stopped listening on port 45477
+[Parent 11930, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1540825637764	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kU9yG0eH5V0f"
+
+(firefox:12301): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:12301): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540825640913	Marionette	INFO	Listening on port 36199
+1540825640977	Marionette	WARN	TLS certificate errors will be ignored for this session
+1540825685563	Marionette	INFO	Stopped listening on port 36199
+[Parent 12301, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1540825910931	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.KlXa6kz40TZv"
+
+(firefox:12800): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:12800): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1540825914056	Marionette	INFO	Listening on port 38129
+1540825914193	Marionette	WARN	TLS certificate errors will be ignored for this session
+1540825958795	Marionette	INFO	Stopped listening on port 38129
+[Parent 12800, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
