@@ -1,17 +1,82 @@
 # -*- coding: utf-8 -*-
 import urllib2
 import pymongo
-
 from django.utils.encoding import smart_str
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
-import re
-import os
 import json
 import time
-
+import re
 link_page = 'http://zakupki.gov.kg/popp/view/order/view.xhtml?id='
+
+def get_general_info():
+    resultLabel = []
+    resultText = []
+
+    page = urllib2.urlopen(link_page + '130452757')
+    soup = BeautifulSoup(page, 'html.parser')
+
+    for body in soup.findAll('body'):
+        content = body.find('div', {'class': 'container-content'})
+        for div in content.findAll('div', {'class': 'col-12 col-md-6'}):
+            for span in div.findAll('span', {'class': 'label'}):
+                resultLabel.append(span.text)
+            for span1 in div.findAll('span', {'class': 'text'}):
+                resultText.append(span1.text)
+    gen_info = {l: t for l, t in zip(resultLabel, resultText)}
+
+    # Get the file name for the new file to write
+    # with open('gen_info.json', 'w') as outfile:
+    #     json.dump(gen_info, outfile)
+
+    x = gen_info[u"Планируемая сумма"]
+    y = x.encode('ascii', 'ignore')
+
+    gen_info[u"Планируемая сумма"] = y
+    # print y
+
+    gen_info = {
+        k.rstrip(): int(v)
+        if v.isdigit()
+        else v.rstrip()
+        for k, v in gen_info.items()
+        }
+
+    # with open('gen_info.json', 'w') as outfile:
+    #     json.dump(gen_info, outfile)
+
+
+    # x.replace('y', '')
+    # y = str(x)
+    # resultr = re.sub(ur'u"\u0020"', '', x)
+    # ord(u'\ua000')
+    # x = u''.join(gen_info[u"Планируемая сумма"]).encode('utf-8').strip(' ')
+
+    jsonD = json.dumps(gen_info, indent=4)
+    return jsonD.decode('unicode_escape')
+
+def get_organization_info():
+    resultLabel = []
+    resultText = []
+    # jsonD = []
+    page = urllib2.urlopen(link_page + '130452757')
+    soup = BeautifulSoup(page, 'html.parser')
+
+    for body in soup.findAll('body'):
+        content = body.find('div', {'class': 'container-content'}).findNextSibling('div',
+                                                                                   {'class': 'container-content'})
+        # col = content.find('div', {'class': 'row'}).next_sibling('div', {'class': 'row'})
+        for div in content.findAll('div', {'class': 'col-12 col-md-6'}):
+            for span in div.findAll('span', {'class': 'label'}):
+                resultLabel.append(span.text)
+            for span1 in div.findAll('span', {'class': 'text'}):
+                resultText.append(span1.text)
+    gen_info = {l: t for l, t in zip(resultLabel, resultText)}
+
+    gen_info = {k.rstrip(): int(v) if v.isdigit() else v.rstrip() for k, v in gen_info.items()}
+
+    jsonD = json.dumps(gen_info, indent=4)
+    return jsonD.decode('unicode_escape')
 
 def get_lots_info():
     page = link_page + '130452757'
@@ -63,21 +128,79 @@ def get_lots_info():
             for row in div.findAll('tr', {'class': 'ui-expanded-row-content ui-widget-content childRowFillBG'}):
                 for table in row.findAll('table', {'class': 'display-table private-room-table no-borders f-right'}):
                     for th in table('th'):
-                        resultLabel.append(smart_str(th.text))
+                        resultLabel.append(th.text)
                     for td in table('td'):
-                        resultText.append(smart_str(td.text))
+                        resultText.append(td.text)
 
+                    lotsSpecs = [{l.strip(): int(t) if t.isdigit() else t.strip()} for l, t in zip(resultLabel, resultText)]
+    #             lotsSpecifies = {l: t for l, t in zip(resultLabel, resultText)}
+    #             lotsSpecifies = {k.rstrip(): int(v) if v.isdigit() else v.rstrip() for k, v in lotsSpecifies.items()}
+    #             # print lotsSpecifies
     list_of_lots = [lots[i:i + 5] for i in range(0, len(lots), 5)]
-    # jsonD = json.dumps(lots)
-    lotsSpecifies = [{l: t} for l, t in zip(resultLabel, resultText)]
-    list_of_spec = [lotsSpecifies[i:i + 5] for i in range(0, len(lotsSpecifies), 5)]
-    gen_info = [{'№': l[0:i][0], 'Наименование лота': l[0:i][1], 'Сумма': l[0:i][2], 'Адрес и Место поставки': l[0:i][3], 'Сроки поставки товара': l[0:i][4], 'techSpecifies': t} for l, t in zip(list_of_lots, list_of_spec)]
-    jsonD = json.dumps(gen_info)
+    # l[0:i][2] = [l[0:i][2].encode('ascii', 'ignore') for l in zip(list_of_lots)]
 
-    print jsonD.decode('unicode_escape')
-
+    list_of_spec = [lotsSpecs[i:i + 5] for i in range(0, len(lotsSpecs), 5)]
+    # print list_of_spec
+    gen_info = [{'№': l[0:i][0].strip(), 'Наименование лота': l[0:i][1].strip(), 'Сумма': int(l[0:i][2].encode('ascii', 'ignore')) if l[0:i][2].encode('ascii', 'ignore').isdigit() else l[0:i][2].encode('ascii', 'ignore').strip(), 'Адрес и Место поставки': l[0:i][3].strip(), 'Сроки поставки товара': l[0:i][4].strip(), 'techSpecifies': t} for l, t in zip(list_of_lots, list_of_spec)]
+    jsonD = json.dumps(gen_info, indent=4)
     driver.close()
+    # jsonD = {k.strip(): int(v) if v.isnumeric() else v.strip() for k, v in zip(jsonD)}
+    # jsonD = json.dumps(jsonD)
+    return jsonD.decode('unicode_escape')
 
+
+def get_special_info():
+            resultLabel = []
+            resultText = []
+            # jsonD = []
+            page = urllib2.urlopen(link_page + '130452757')
+            soup = BeautifulSoup(page, 'html.parser')
+
+            for body in soup.findAll('body'):
+                content = body.find('div', {'class': 'container-content'})
+                col = content.findNextSibling('div', {'class': 'container-content'})
+                col1 = col.findNextSibling('div', {'class': 'container-content'})
+                col2 = col1.findNextSibling('div', {'class': 'container-content'})
+                col3 = col2.findNextSibling('div', {'class': 'container-content'})
+                col4 = col3.findNextSibling('div', {'class': 'container-content'})
+                for div in col4.findAll('div', {'class': 'col-12 col-md-6'}):
+                    for span in div.findAll('span', {'class': 'label'}):
+                        resultLabel.append(smart_str(span.text))
+                    for span1 in div.findAll('span', {'class': 'text'}):
+                        resultText.append(smart_str(span1.text))
+                gen_info = {l: t for l, t in zip(resultLabel, resultText)}
+                jsonD = json.dumps(gen_info)
+
+            return jsonD.decode('unicode_escape')
+
+def get_pay_info():
+            resultText = []
+            page = urllib2.urlopen(link_page + '130452757')
+            soup = BeautifulSoup(page, 'html.parser')
+
+            for body in soup.findAll('body'):
+                for div in body.findAll('div', {'class': 'row no-gutters'}):
+                    for tbody in div.findAll('tbody'):
+                        for cell in tbody('td'):
+                            resultText.append(smart_str(cell.text))
+
+            l = resultText[0::2]
+            t = resultText[1::2]
+
+            gen_info = {l: t for l, t in zip(l, t)}
+            jsonD = json.dumps(gen_info)
+            return jsonD.decode('unicode_escape')
+
+def inserting_to_DB():
+        myclient = pymongo.MongoClient("localhost:27017")
+        mydb = myclient["scrapping"]
+        mycol = mydb["zakupki.gov.kg"]
+
+        mydict = {"genInfo": get_general_info(), "OrganizationInfo": get_organization_info(), "lots": get_lots_info(), "specialInfo": get_special_info(), "payInfo": get_pay_info()}
+        x = mycol.insert(mydict)
+        cursor = mycol.find()
+        for record in cursor:
+            print(record)
 
 # def geting_lots_info():
 #     resultLabel = ['№', 'Наименование лота', 'Сумма', 'Адрес и Место поставки', 'Сроки поставки товара ']
@@ -165,5 +288,9 @@ def get_lots_info():
 #
 #     return jsonD.decode('unicode_escape')
 
+# print get_general_info()
+# print get_organization_info()
 
-get_lots_info()
+print get_general_info()
+print get_lots_info()
+# inserting_to_DB()
