@@ -7,6 +7,9 @@ from bs4 import BeautifulSoup
 import json
 import time
 import re
+import requests
+from base64 import b64encode
+
 link_page = 'http://zakupki.gov.kg/popp/view/order/view.xhtml?id='
 
 def get_general_info():
@@ -23,7 +26,12 @@ def get_general_info():
                 resultLabel.append(span.text)
             for span1 in div.findAll('span', {'class': 'text'}):
                 resultText.append(span1.text)
+                links = span1.find("a")
+                if links is not None:
+                    a = links.attrs['href']
     gen_info = {l: t for l, t in zip(resultLabel, resultText)}
+
+    del gen_info[u"Размер гарантийного обеспечения конкурсной заявки (ГОКЗ): Декларация"]
 
     # Get the file name for the new file to write
     # with open('gen_info.json', 'w') as outfile:
@@ -35,17 +43,17 @@ def get_general_info():
     gen_info[u"Планируемая сумма"] = y
     # print y
 
+    gen_info[u"Официальное информационное письмо по банковскому реквизиту"] = str(a)
+
+
+
+
     gen_info = {
-        k.rstrip(): int(v)
+        k.strip(): int(v)
         if v.isdigit()
-        else v.rstrip()
+        else v.strip()
         for k, v in gen_info.items()
         }
-
-    # with open('gen_info.json', 'w') as outfile:
-    #     json.dump(gen_info, outfile)
-
-
     # x.replace('y', '')
     # y = str(x)
     # resultr = re.sub(ur'u"\u0020"', '', x)
@@ -83,6 +91,7 @@ def get_lots_info():
     lots = []
     resultText = []
     resultLabel = []
+    list_of_files = []
 
     driver = webdriver.Firefox()
     driver.implicitly_wait(30)
@@ -131,21 +140,28 @@ def get_lots_info():
                         resultLabel.append(th.text)
                     for td in table('td'):
                         resultText.append(td.text)
-
                     lotsSpecs = [{l.strip(): int(t) if t.isdigit() else t.strip()} for l, t in zip(resultLabel, resultText)]
-    #             lotsSpecifies = {l: t for l, t in zip(resultLabel, resultText)}
-    #             lotsSpecifies = {k.rstrip(): int(v) if v.isdigit() else v.rstrip() for k, v in lotsSpecifies.items()}
-    #             # print lotsSpecifies
+
+            for row in div.findAll('tr', {'class': 'ui-expanded-row-content ui-widget-content childRowFillBG'}):
+                for table in row.findAll('table', {'class': 'display-table private-room-table no-borders f-right'}):
+                    for td in table('td'):
+                        for links in td.findAll("a"):
+                            if links is not None:
+                                a = links.attrs['href']
+                                list_of_files.append(a)
+
     list_of_lots = [lots[i:i + 5] for i in range(0, len(lots), 5)]
     # l[0:i][2] = [l[0:i][2].encode('ascii', 'ignore') for l in zip(list_of_lots)]
 
     list_of_spec = [lotsSpecs[i:i + 5] for i in range(0, len(lotsSpecs), 5)]
     # print list_of_spec
-    gen_info = [{'№': l[0:i][0].strip(), 'Наименование лота': l[0:i][1].strip(), 'Сумма': int(l[0:i][2].encode('ascii', 'ignore')) if l[0:i][2].encode('ascii', 'ignore').isdigit() else l[0:i][2].encode('ascii', 'ignore').strip(), 'Адрес и Место поставки': l[0:i][3].strip(), 'Сроки поставки товара': l[0:i][4].strip(), 'techSpecifies': t} for l, t in zip(list_of_lots, list_of_spec)]
+
+    print list_of_files
+
+    gen_info = [{'№': l[0:i][0].strip(), 'Наименование лота': l[0:i][1].strip(), 'Сумма': int(l[0:i][2].encode('ascii', 'ignore')) if l[0:i][2].encode('ascii', 'ignore').isdigit() else l[0:i][2].encode('ascii', 'ignore').strip(), 'Адрес и Место поставки': l[0:i][3].strip(), 'Сроки поставки товара': l[0:i][4].strip(), 'techSpecifies': t, 'Файл': f} for l, t, f in zip(list_of_lots, list_of_spec, list_of_files)]
     jsonD = json.dumps(gen_info, indent=4)
     driver.close()
-    # jsonD = {k.strip(): int(v) if v.isnumeric() else v.strip() for k, v in zip(jsonD)}
-    # jsonD = json.dumps(jsonD)
+
     return jsonD.decode('unicode_escape')
 
 
