@@ -6,6 +6,7 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 import json
 import time
+from bson import json_util
 import re
 import requests
 from base64 import b64encode
@@ -212,8 +213,16 @@ def inserting_to_DB():
         mydb = myclient["scrapping"]
         mycol = mydb["zakupki.gov.kg"]
 
+        # data = json_util.loads(response.read())
         mydict = {"genInfo": get_general_info(), "OrganizationInfo": get_organization_info(), "lots": get_lots_info(), "specialInfo": get_special_info(), "payInfo": get_pay_info()}
-        x = mycol.insert(mydict)
+
+        # gen_info = get_general_info()
+        # genInfo = json_util.loads(gen_info.encode('ascii', 'ignore').read())
+        # organization_info = get_organization_info()
+        # OrganizationInfo = json_util.loads(organization_info.read())
+        # mydict = {"genInfo": genInfo, "OrganizationInfo": OrganizationInfo}
+        # file_data = json.dumps({"genInfo": json_util.loads(get_general_info().read()), "OrganizationInfo": get_organization_info(), "lots": get_lots_info(), "specialInfo": get_special_info(), "payInfo": get_pay_info()}, sort_keys=True)
+        mycol.insert(mydict)
         cursor = mycol.find()
         for record in cursor:
             print(record)
@@ -307,6 +316,6 @@ def inserting_to_DB():
 # print get_general_info()
 # print get_organization_info()
 
-print get_general_info()
-print get_lots_info()
-# inserting_to_DB()
+# print get_general_info()
+# print get_lots_info()
+inserting_to_DB()
