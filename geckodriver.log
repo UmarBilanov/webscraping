@@ -14848,3 +14848,430 @@ IPDL protocol error: Handler returned error code!
 1541242582815	Marionette	WARN	TLS certificate errors will be ignored for this session
 1541242627555	Marionette	INFO	Stopped listening on port 39159
 [Parent 12139, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541497134843	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.BRLw9CXDrdgP"
+
+(firefox:11820): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:11820): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541497140605	Marionette	INFO	Listening on port 35969
+1541497140717	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 11820, Gecko_IOThread] WARNING: pipe error (96): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 11820, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541497172938	Marionette	INFO	Stopped listening on port 35969
+1541506266073	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Jlt8uDqLDEtK"
+
+(firefox:17138): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:17138): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541506274033	Marionette	INFO	Listening on port 42309
+1541506274114	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 17138, Gecko_IOThread] WARNING: pipe error (70): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 17138, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541506289081	Marionette	INFO	Stopped listening on port 42309
+1541506663070	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.r9x7GKPLBGaR"
+
+(firefox:17574): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:17574): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541506667478	Marionette	INFO	Listening on port 38919
+1541506667494	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 17574, Gecko_IOThread] WARNING: pipe error (93): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 17574, Gecko_IOThread] WARNING: pipe error (70): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541506678794	Marionette	INFO	Stopped listening on port 38919
+1541616742129	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.t5AfOlMzNXSq"
+
+(firefox:10468): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:10468): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541616746588	Marionette	INFO	Listening on port 36251
+1541616746646	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 2709: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIAutoCompleteController.getStyleAt]
+[Parent 10468, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 10468, Gecko_IOThread] WARNING: pipe error (93): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541616833153	Marionette	INFO	Stopped listening on port 36251
+1541616955346	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.GKd7Y0lWE2JM"
+
+(firefox:10874): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:10874): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541616958793	Marionette	INFO	Listening on port 44929
+1541616958858	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 2709: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIAutoCompleteController.getStyleAt]
+1541617031945	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.7UMn3dog0l14"
+
+(firefox:11151): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:11151): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541617035370	Marionette	INFO	Listening on port 33435
+1541617035470	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 11151, Gecko_IOThread] WARNING: pipe error (97): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 11151, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541617070489	Marionette	INFO	Stopped listening on port 33435
+[Parent 10874, Gecko_IOThread] WARNING: pipe error (86): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 10874, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541617075807	Marionette	INFO	Stopped listening on port 44929
+1541618289009	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.haQ92H64Qcrw"
+
+(firefox:11899): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:11899): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541618292323	Marionette	INFO	Listening on port 39419
+1541618292428	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 11899, Gecko_IOThread] WARNING: pipe error (70): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 11899, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541618341360	Marionette	INFO	Stopped listening on port 39419
+1541618495301	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Wl8j2UMcDApP"
+
+(firefox:12230): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:12230): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541618498813	Marionette	INFO	Listening on port 44231
+1541618498914	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541618578580	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.JwyNHMRerIAt"
+
+(firefox:12525): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:12525): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541618583047	Marionette	INFO	Listening on port 45831
+1541618583442	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: "Tried to send a 'tabDetached' event on an already destroyed actor 'frameTarget'"
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 12525, Gecko_IOThread] WARNING: pipe error (84): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 12525, Gecko_IOThread] WARNING: pipe error (65): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541618628320	Marionette	INFO	Stopped listening on port 45831
+[Parent 12230, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 12230, Gecko_IOThread] WARNING: pipe error (65): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541618630914	Marionette	INFO	Stopped listening on port 44231
+1541618669892	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.9S3vq0LxkUNt"
+
+(firefox:12851): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:12851): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541618674828	Marionette	INFO	Listening on port 45221
+1541618674917	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 12851, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 12851, Gecko_IOThread] WARNING: pipe error (95): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541618698627	Marionette	INFO	Stopped listening on port 45221
+1541618730393	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0YVrmNWClmSb"
+
+(firefox:13139): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:13139): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541618733821	Marionette	INFO	Listening on port 39083
+1541618733910	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541618846544	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.xjszyqvbjzJp"
+
+(firefox:13444): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:13444): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541618849717	Marionette	INFO	Listening on port 41709
+1541618849757	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+[Parent 13444, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 13444, Gecko_IOThread] WARNING: pipe error (64): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541618908251	Marionette	INFO	Stopped listening on port 41709
+[Parent 13139, Gecko_IOThread] WARNING: pipe error (86): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 13139, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541618993714	Marionette	INFO	Stopped listening on port 39083
+1541620109711	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fn7fxr4s7hus"
+
+(firefox:14195): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:14195): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541620113705	Marionette	INFO	Listening on port 33925
+1541620113734	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541620138560	Marionette	INFO	Stopped listening on port 33925
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 14195, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 14195, Gecko_IOThread] WARNING: pipe error (65): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541620334334	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.7MObEBLqTEm3"
+
+(firefox:14578): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:14578): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541620337581	Marionette	INFO	Listening on port 40855
+1541620337647	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541620362704	Marionette	INFO	Stopped listening on port 40855
+[Parent 14578, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 14578, Gecko_IOThread] WARNING: pipe error (86): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541665675192	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.HCPEDRwUqrGt"
+
+(firefox:7025): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:7025): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541665680109	Marionette	INFO	Listening on port 41143
+1541665680252	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541665706886	Marionette	INFO	Stopped listening on port 41143
+[Parent 7025, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 7025, Gecko_IOThread] WARNING: pipe error (71): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541669592058	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.HfKlo2eOqjRQ"
+
+(firefox:9699): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:9699): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541669598094	Marionette	INFO	Listening on port 38189
+1541669598226	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541669622760	Marionette	INFO	Stopped listening on port 38189
+[Parent 9699, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 9699, Gecko_IOThread] WARNING: pipe error (89): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541669884665	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.IwBuM3wg5Rub"
+
+(firefox:10109): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:10109): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541669889295	Marionette	INFO	Listening on port 38155
+1541669889394	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541669914664	Marionette	INFO	Stopped listening on port 38155
+[Parent 10109, Gecko_IOThread] WARNING: pipe error (70): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 10109, Gecko_IOThread] WARNING: pipe error (81): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541670086347	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.S8w9mjCfnEh8"
+
+(firefox:10503): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:10503): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541670089805	Marionette	INFO	Listening on port 32829
+1541670089877	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541670112578	Marionette	INFO	Stopped listening on port 32829
+[Parent 10503, Gecko_IOThread] WARNING: pipe error (84): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541670452167	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.qs3ZzpnBLA7e"
+
+(firefox:11004): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:11004): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541670456684	Marionette	INFO	Listening on port 41815
+1541670456701	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541670481013	Marionette	INFO	Stopped listening on port 41815
+[Parent 11004, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 11004, Gecko_IOThread] WARNING: pipe error (71): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541670837869	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.zEhP4f72Otom"
+
+(firefox:11472): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:11472): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541670842901	Marionette	INFO	Listening on port 46731
+1541670843011	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541670869704	Marionette	INFO	Stopped listening on port 46731
+[Parent 11472, Gecko_IOThread] WARNING: pipe error (86): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 11472, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541671081656	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0KBvkjLvQ5Sd"
+
+(firefox:11823): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:11823): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541671086055	Marionette	INFO	Listening on port 35917
+1541671086100	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541671110856	Marionette	INFO	Stopped listening on port 35917
+[Parent 11823, Gecko_IOThread] WARNING: pipe error (92): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 11823, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541672242499	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fnaKUN1NMGiR"
+
+(firefox:12483): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:12483): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541672245739	Marionette	INFO	Listening on port 45603
+1541672245889	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541672270243	Marionette	INFO	Stopped listening on port 45603
+[Parent 12483, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 12483, Gecko_IOThread] WARNING: pipe error (86): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541672327775	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.H8xEuHdxwhYf"
+
+(firefox:12800): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:12800): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541672330789	Marionette	INFO	Listening on port 35193
+1541672330936	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541672353933	Marionette	INFO	Stopped listening on port 35193
+[Parent 12800, Gecko_IOThread] WARNING: pipe error (84): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 12800, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541672747662	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.TpR43dzMwDUM"
+
+(firefox:13329): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:13329): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541672751586	Marionette	INFO	Listening on port 36565
+1541672751675	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541672775978	Marionette	INFO	Stopped listening on port 36565
+[Parent 13329, Gecko_IOThread] WARNING: pipe error (95): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 13329, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541673324274	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.h7l8tajmazXw"
+
+(firefox:13900): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:13900): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541673327307	Marionette	INFO	Listening on port 35839
+1541673327461	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541673468591	Marionette	INFO	Stopped listening on port 35839
+[Parent 13900, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 13900, Gecko_IOThread] WARNING: pipe error (81): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541927769216	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.J9TrAL0WlWjW"
+
+(firefox:17155): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:17155): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541927774689	Marionette	INFO	Listening on port 38283
+1541927774753	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541927796789	Marionette	INFO	Stopped listening on port 38283
+[Parent 17155, Gecko_IOThread] WARNING: pipe error (98): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 17155, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541928291939	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.mkMPvb6EV9xq"
+
+(firefox:17745): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:17745): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541928295566	Marionette	INFO	Listening on port 35001
+1541928295682	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541928317634	Marionette	INFO	Stopped listening on port 35001
+[Parent 17745, Gecko_IOThread] WARNING: pipe error (86): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 17745, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541928469905	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.jIcCow8bbqYK"
+
+(firefox:18188): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:18188): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541928473225	Marionette	INFO	Listening on port 43091
+1541928473335	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541928495249	Marionette	INFO	Stopped listening on port 43091
+[Parent 18188, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 18188, Gecko_IOThread] WARNING: pipe error (81): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541928540779	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.yeYLOTnAlD1w"
+
+(firefox:18471): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:18471): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541928544263	Marionette	INFO	Listening on port 40735
+1541928544310	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541928565093	Marionette	INFO	Stopped listening on port 40735
+[Parent 18471, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 18471, Gecko_IOThread] WARNING: pipe error (86): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541928628229	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.uAu1hRsRyLso"
+
+(firefox:18805): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:18805): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541928631294	Marionette	INFO	Listening on port 35157
+1541928631404	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541928653622	Marionette	INFO	Stopped listening on port 35157
+[Parent 18805, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541928848175	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.jwQtfDMywVGv"
+
+(firefox:19207): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:19207): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541928851828	Marionette	INFO	Listening on port 43177
+1541928851891	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541928873491	Marionette	INFO	Stopped listening on port 43177
+[Parent 19207, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1541939864780	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.VMiUKDKHzAEg"
+
+(firefox:22839): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:22839): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1541939869859	Marionette	INFO	Listening on port 35041
+1541939869918	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1541939896614	Marionette	INFO	Stopped listening on port 35041
+[Parent 22839, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542011792187	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kW44dybh4g2f"
+
+(firefox:7374): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:7374): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1542011800347	Marionette	INFO	Listening on port 37361
+1542011800443	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+1542011846401	Marionette	INFO	Stopped listening on port 37361
+[Parent 7374, Gecko_IOThread] WARNING: pipe error (81): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356

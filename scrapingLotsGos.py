@@ -6,10 +6,12 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 import json
 import time
+from pymongo import MongoClient
+import gridfs
 from bson import json_util
+import os
 import re
 import requests
-from base64 import b64encode
 
 link_page = 'http://zakupki.gov.kg/popp/view/order/view.xhtml?id='
 
@@ -62,6 +64,7 @@ def get_general_info():
     # x = u''.join(gen_info[u"Планируемая сумма"]).encode('utf-8').strip(' ')
 
     jsonD = json.dumps(gen_info, indent=4)
+
     return jsonD.decode('unicode_escape')
 
 def get_organization_info():
@@ -165,7 +168,6 @@ def get_lots_info():
 
     return jsonD.decode('unicode_escape')
 
-
 def get_special_info():
             resultLabel = []
             resultText = []
@@ -208,24 +210,72 @@ def get_pay_info():
             jsonD = json.dumps(gen_info)
             return jsonD.decode('unicode_escape')
 
+def get_files():
+    file_page = 'https://trade.okmot.kg/sobs/view/bid/short_info.xhtml?id=130452757'
+
+    profile = webdriver.FirefoxProfile()
+    profile.set_preference("browser.download.folderList", 2)
+    profile.set_preference("browser.download.manager.showWhenStarting", False)
+    profile.set_preference("browser.download.dir", '/home/umar/PycharmProjects/WebscrapperDB')
+    profile.set_preference("browser.helperApps.neverAsk.saveToDisk", 'application/octet-stream')
+
+    driver = webdriver.Firefox(firefox_profile=profile)
+    driver.get("https://trade.okmot.kg/uac/view/user/login.xhtml")
+    time.sleep(6)
+    username = driver.find_element_by_id("username")
+    password = driver.find_element_by_id("password")
+    username.send_keys("askartec")
+    time.sleep(5)
+    password.send_keys("@BigMama2013")
+    time.sleep(5)
+    login = driver.find_element_by_id("j_idt72")
+    login.click()
+    driver.get(file_page)
+
+    button = driver.find_element_by_id('downloadLink')
+    button.click()
+    driver.close()
+
+
+
 def inserting_to_DB():
         myclient = pymongo.MongoClient("localhost:27017")
         mydb = myclient["scrapping"]
         mycol = mydb["zakupki.gov.kg"]
 
         # data = json_util.loads(response.read())
-        mydict = {"genInfo": get_general_info(), "OrganizationInfo": get_organization_info(), "lots": get_lots_info(), "specialInfo": get_special_info(), "payInfo": get_pay_info()}
+        # print os.path.getsize(r'owl.jpg')
+        #
+        # path = '/home/umar/PycharmProjects/WebscrapperDB'
 
-        # gen_info = get_general_info()
-        # genInfo = json_util.loads(gen_info.encode('ascii', 'ignore').read())
-        # organization_info = get_organization_info()
-        # OrganizationInfo = json_util.loads(organization_info.read())
-        # mydict = {"genInfo": genInfo, "OrganizationInfo": OrganizationInfo}
-        # file_data = json.dumps({"genInfo": json_util.loads(get_general_info().read()), "OrganizationInfo": get_organization_info(), "lots": get_lots_info(), "specialInfo": get_special_info(), "payInfo": get_pay_info()}, sort_keys=True)
-        mycol.insert(mydict)
-        cursor = mycol.find()
-        for record in cursor:
-            print(record)
+        for files in os.walk("/home/umar/PycharmProjects/WebscrapperDB"):
+            for filename in files:
+                name = filename
+        print name
+
+        # # add the file to GridFS, per the pymongo documentation: http://api.mongodb.org/python/current/examples/gridfs.html
+        # db = MongoClient().myDB
+
+        fs = gridfs.GridFS(mydb)
+        fileID = fs.put(open(r'/home/umar/PycharmProjects/WebscrapperDB/' + str(name), 'r'))
+        out = fs.get(fileID)
+        print out.length
+        #
+        # mydict = {
+        #     "genInfo": get_general_info(),
+        #     "OrganizationInfo": get_organization_info(),
+        #     # "lots": get_lots_info(),
+        #     "specialInfo": get_special_info(),
+        #     "payInfo": get_pay_info()
+        # }
+        #
+        # with open('/home/umar/PycharmProjects/WebscrapperDB/gen_info.json', 'wb') as write_file:
+        #     json.dump(mydict, write_file)
+        #
+        # # mycol.insert(mydict)
+        # cursor = mycol.find()
+        # for record in cursor:
+        #     print(record)
 
 # def geting_lots_info():
 #     resultLabel = ['№', 'Наименование лота', 'Сумма', 'Адрес и Место поставки', 'Сроки поставки товара ']
@@ -318,4 +368,7 @@ def inserting_to_DB():
 
 # print get_general_info()
 # print get_lots_info()
+# inserting_to_DB()
+# get_files()
+
 inserting_to_DB()
