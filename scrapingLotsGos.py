@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 import urllib2
+
+import datetime
 import pymongo
 from django.utils.encoding import smart_str
 from selenium import webdriver
@@ -9,9 +11,8 @@ import time
 import zipfile
 import shutil
 import gridfs
-from bson import json_util
 import os
-import requests
+import locale
 
 link_page = 'http://zakupki.gov.kg/popp/view/order/view.xhtml?id='
 
@@ -19,7 +20,7 @@ def get_general_info():
     resultLabel = []
     resultText = []
 
-    page = urllib2.urlopen(link_page + '130452757')
+    page = urllib2.urlopen(link_page + '134025360')
     soup = BeautifulSoup(page, 'html.parser')
 
     for body in soup.findAll('body'):
@@ -34,7 +35,7 @@ def get_general_info():
                     a = links.attrs['href']
     gen_info = {l: t for l, t in zip(resultLabel, resultText)}
 
-    del gen_info[u"Размер гарантийного обеспечения конкурсной заявки (ГОКЗ): Декларация"]
+    # del gen_info[u"Размер гарантийного обеспечения конкурсной заявки (ГОКЗ): Декларация"]
 
     # Get the file name for the new file to write
     # with open('gen_info.json', 'w') as outfile:
@@ -73,7 +74,7 @@ def get_organization_info():
     resultLabel = []
     resultText = []
     # jsonD = []
-    page = urllib2.urlopen(link_page + '130452757')
+    page = urllib2.urlopen(link_page + '134025360')
     soup = BeautifulSoup(page, 'html.parser')
 
     for body in soup.findAll('body'):
@@ -97,7 +98,7 @@ def get_organization_info():
     return jsonD.decode('unicode_escape')
 
 def get_lots_info():
-    page = link_page + '130452757'
+    page = link_page + '134025360'
     lots = []
     resultText = []
     resultLabel = []
@@ -182,7 +183,7 @@ def get_special_info():
             resultLabel = []
             resultText = []
             # jsonD = []
-            page = urllib2.urlopen(link_page + '130452757')
+            page = urllib2.urlopen(link_page + '134025360')
             soup = BeautifulSoup(page, 'html.parser')
 
             for body in soup.findAll('body'):
@@ -208,19 +209,21 @@ def get_special_info():
 
 def get_pay_info():
             resultText = []
-            page = urllib2.urlopen(link_page + '130452757')
+            page = urllib2.urlopen(link_page + '134025360')
             soup = BeautifulSoup(page, 'html.parser')
 
             for body in soup.findAll('body'):
                 for div in body.findAll('div', {'class': 'row no-gutters'}):
                     for tbody in div.findAll('tbody'):
                         for cell in tbody('td'):
-                            resultText.append(smart_str(cell.text))
+                            resultText.append(cell.text)
 
             l = resultText[0::2]
             t = resultText[1::2]
 
             gen_info = {l: t for l, t in zip(l, t)}
+            # del gen_info[u"Место предполагаемого тех. контроля и испытаний"]
+
             jsonD = json.dumps(gen_info)
 
             json_file = open('/home/umar/PycharmProjects/WebscrapperDB/pay_info.json', 'w')
@@ -230,7 +233,7 @@ def get_pay_info():
             return jsonD.decode('unicode_escape')
 
 def get_files():
-    file_page = 'https://trade.okmot.kg/sobs/view/bid/short_info.xhtml?id=130452757'
+    # file_page = 'https://trade.okmot.kg/sobs/view/bid/short_info.xhtml?id=134025360'
 
     profile = webdriver.FirefoxProfile()
     profile.set_preference("browser.download.folderList", 2)
@@ -244,28 +247,139 @@ def get_files():
     username = driver.find_element_by_id("username")
     password = driver.find_element_by_id("password")
     username.send_keys("askartec")
-    time.sleep(5)
+    time.sleep(5) #sleep_mini sleep_norm sleep_max sleep_long
     password.send_keys("@BigMama2013")
     time.sleep(5)
-    login = driver.find_element_by_id("j_idt72")
+    login = driver.find_element_by_xpath("//input[@value='Войти']")
     login.click()
-
-    driver.get(file_page)
+    time.sleep(5)
+    driver.get("https://trade.okmot.kg/sobs/view/bid/short_info.xhtml?id=134025360")
     time.sleep(10)
     button = driver.find_element_by_id('downloadLink')
     button.click()
 
     driver.close()
 
-
-
-def inserting_to_DB():
+def inserting_to_mongoDB():
+    # we are getting the json and attached files
     get_general_info()
     get_organization_info()
     get_lots_info()
     get_special_info()
     get_pay_info()
     get_files()
+    # we are getting the json and attached files
+
+    # getting the name of attached zip file
+    resultLabel = []
+    resultText = []
+
+    page = urllib2.urlopen(link_page + '134025360')
+    soup = BeautifulSoup(page, 'html.parser')
+
+    for body in soup.findAll('body'):
+        content = body.find('div', {'class': 'container-content'})
+        for div in content.findAll('div', {'class': 'col-12 col-md-6'}):
+            for span in div.findAll('span', {'class': 'label'}):
+                resultLabel.append(span.text)
+            for span1 in div.findAll('span', {'class': 'text'}):
+                resultText.append(span1.text)
+
+    gen_info = {l: t for l, t in zip(resultLabel, resultText)}
+
+    x = gen_info[u"Номер"]
+    t = gen_info[u"Наименование закупки"]
+    y = x.encode('ascii', 'ignore') + '.zip'
+
+    filename = str(y)
+    NamePurchase = t
+
+    a = gen_info[u"Дата публикации"]
+    # p.agent_info = u' '.join((agent_contact, agent_telno)).encode('utf-8').strip()
+    d = str(a.encode('utf-8'))
+    print d
+    print type(d)
+    # d = a.encode('ascii', 'ignore')
+    # date = str(a)
+    # print date
+    # locale.getlocale
+    locale.setlocale(locale.LC_TIME, 'ru_RU.UTF-8')
+    result = datetime.datetime.strptime(d, '%d %B %Y %H:%M')
+    print result
+    print filename
+    # print d
+    # getting the name of attached zip file
+
+    # connecting to mongoDB
+    myclient = pymongo.MongoClient("localhost:27017")
+    mydb = myclient["scrapping"]
+    mycol = mydb["zakupki.gov.kg"]
+    # connecting to mongoDB
+
+    # inserting the archive to mongoDB
+    fs = gridfs.GridFS(mydb)
+    fileID = fs.put(open(r'/home/umar/PycharmProjects/WebscrapperDB/' + filename, 'r'), filename='AttachedFiles.zip')
+    out = fs.get(fileID)
+    print out.length
+    print out.filename
+    # inserting the archive to MongoDB
+
+    # inserting the files and and archive to MongoDB
+    with open('/home/umar/PycharmProjects/WebscrapperDB/gen_info.json') as f:
+        general_data = json.load(f)
+
+    with open('/home/umar/PycharmProjects/WebscrapperDB/organization_info.json') as f:
+        organization_data = json.load(f)
+
+    with open('/home/umar/PycharmProjects/WebscrapperDB/lots_info.json') as f:
+        lots_data = json.load(f)
+
+    with open('/home/umar/PycharmProjects/WebscrapperDB/special_info.json') as f:
+        special_data = json.load(f)
+
+    with open('/home/umar/PycharmProjects/WebscrapperDB/pay_info.json') as f:
+        pay_data = json.load(f)
+
+    result_data = {
+        "Наименование закупки": NamePurchase,
+        "General info": general_data,
+        "Organization info": organization_data,
+        "Lots info": lots_data,
+        "Special info": special_data,
+        "Pay info": pay_data,
+        "Attached files": out._id
+    }
+
+    # mycol.remove()
+    mycol.insert(result_data, check_keys=False)
+    # inserting the files and and archive to MongoDB
+
+
+
+    myclient.close()
+
+    # deleting the all files in folder
+    folder = '/home/umar/PycharmProjects/WebscrapperDB'
+    for the_file in os.listdir(folder):
+        file_path = os.path.join(folder, the_file)
+        try:
+            if os.path.isfile(file_path):
+                os.unlink(file_path)
+        except Exception as e:
+            print(e)
+    # deleting the files in folder
+
+def inserting_to_GridFS():
+    # we are getting the json and attached files
+    get_general_info()
+    get_organization_info()
+    get_lots_info()
+    get_special_info()
+    get_pay_info()
+    get_files()
+    # we are getting the json and attached files
+
+    # getting the name of attached zip file
     resultLabel = []
     resultText = []
 
@@ -289,17 +403,23 @@ def inserting_to_DB():
     filename = str(y)
     fileName = str(z)
     print filename
+    # getting the name of attached zip file
 
+    # extracting the zipped file
     with zipfile.ZipFile(r'/home/umar/PycharmProjects/WebscrapperDB/' + filename, 'r') as Zip:
         # extracting all the files
         Zip.extractall('/home/umar/PycharmProjects/WebscrapperDB')
+    # extracting the zipped file
 
+    # removing the downloaded zip file
     os.remove(r'/home/umar/PycharmProjects/WebscrapperDB/' + filename)
+    # removing the downloaded zip file
 
-    # shutil.make_archive('/home/umar/PycharmProjects/WebscrapperDB/' + fileName, 'zip', '/home/umar/PycharmProjects/WebscrapperDB')
-    # shutil.close()
+    # making the folder archive
     shutil.make_archive('/home/umar/PycharmProjects/' + fileName, 'zip', '/home/umar/PycharmProjects/', 'WebscrapperDB')
+    # making the folder archive
 
+    # deleting the all files in folder
     folder = '/home/umar/PycharmProjects/WebscrapperDB'
     for the_file in os.listdir(folder):
         file_path = os.path.join(folder, the_file)
@@ -308,38 +428,24 @@ def inserting_to_DB():
                 os.unlink(file_path)
         except Exception as e:
             print(e)
+    # deleting the files in folder
 
+    # moving the archive file
     shutil.move('/home/umar/PycharmProjects/' + filename, '/home/umar/PycharmProjects/WebscrapperDB/' + filename)
+    # moving the archive file
 
-
-
+    # connecting to mongoDB
     myclient = pymongo.MongoClient("localhost:27017")
     mydb = myclient["scrapping"]
-    # mycol = mydb["zakupki.gov.kg"]
+    # connecting to mongoDB
 
-
-
+    # inserting the archive to mongoDB
     fs = gridfs.GridFS(mydb)
     fileID = fs.put(open(r'/home/umar/PycharmProjects/WebscrapperDB/' + filename, 'r'))
     out = fs.get(fileID)
     print out.length
-
-    #
-    # mydict = {
-    #     "genInfo": get_general_info(),
-    #     "OrganizationInfo": get_organization_info(),
-    #     # "lots": get_lots_info(),
-    #     "specialInfo": get_special_info(),
-    #     "payInfo": get_pay_info()
-    # }
-    #
-    # with open('/home/umar/PycharmProjects/WebscrapperDB/gen_info.json', 'wb') as write_file:
-    #     json.dump(mydict, write_file)
-    #
-    # # mycol.insert(mydict)
-    # cursor = mycol.find()
-    # for record in cursor:
-    #     print(record)
+    print out.read()
+    # inserting the archive to mongoDB
 
 # def geting_lots_info():
 #     resultLabel = ['№', 'Наименование лота', 'Сумма', 'Адрес и Место поставки', 'Сроки поставки товара ']
@@ -433,4 +539,9 @@ def inserting_to_DB():
 # print get_lots_info()
 # print get_special_info()
 # print get_pay_info()
-inserting_to_DB()
+# get_general_info()
+# get_organization_info()
+# get_lots_info()
+# get_special_info()
+# get_pay_info()
+inserting_to_mongoDB()
