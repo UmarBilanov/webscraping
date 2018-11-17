@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 import urllib2
-
-import datetime
 import pymongo
 from django.utils.encoding import smart_str
 from selenium import webdriver
@@ -12,7 +10,8 @@ import zipfile
 import shutil
 import gridfs
 import os
-import locale
+import timestring
+from timestring import Date
 
 link_page = 'http://zakupki.gov.kg/popp/view/order/view.xhtml?id='
 
@@ -47,10 +46,10 @@ def get_general_info():
     gen_info[u"Планируемая сумма"] = y
     # print y
 
+    # del gen_info[u"Дата публикации"]
+    # del gen_info[u"Срок подачи конкурсных заявок"]
+
     gen_info[u"Официальное информационное письмо по банковскому реквизиту"] = str(a)
-
-
-
 
     gen_info = {
         k.strip(): int(v)
@@ -293,22 +292,20 @@ def inserting_to_mongoDB():
 
     filename = str(y)
     NamePurchase = t
+    # getting the name of attached zip file
 
+    # converting string Date to date
     a = gen_info[u"Дата публикации"]
-    # p.agent_info = u' '.join((agent_contact, agent_telno)).encode('utf-8').strip()
+    b = gen_info[u"Срок подачи конкурсных заявок"]
     d = str(a.encode('utf-8'))
+    e = str(b.encode('utf-8'))
     print d
     print type(d)
-    # d = a.encode('ascii', 'ignore')
-    # date = str(a)
-    # print date
-    # locale.getlocale
-    locale.setlocale(locale.LC_TIME, 'ru_RU.UTF-8')
-    result = datetime.datetime.strptime(d, '%d %B %Y %H:%M')
-    print result
-    print filename
-    # print d
-    # getting the name of attached zip file
+    PDate = timestring.Date(d)
+    FinalDate = timestring.Date(e)
+    print PDate
+    print FinalDate
+    # converting string Date to date
 
     # connecting to mongoDB
     myclient = pymongo.MongoClient("localhost:27017")
@@ -342,6 +339,8 @@ def inserting_to_mongoDB():
 
     result_data = {
         "Наименование закупки": NamePurchase,
+        # "Дата публикации": Date(PDate),
+        # "Срок подачи конкурсных заявок": Date(FinalDate),
         "General info": general_data,
         "Organization info": organization_data,
         "Lots info": lots_data,
@@ -353,8 +352,6 @@ def inserting_to_mongoDB():
     # mycol.remove()
     mycol.insert(result_data, check_keys=False)
     # inserting the files and and archive to MongoDB
-
-
 
     myclient.close()
 
