@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75ebca36-c703-4a0d-b33a-9f9e2f1b2779" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scrapingZakupkiGov.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/draftGos.py" afterPath="$PROJECT_DIR$/draftGos.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -614,7 +612,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542632470357</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="scraping zakupkiKR">
+      <created>1542645865637</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1542645865638</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -666,7 +671,8 @@
     <MESSAGE value="converting date" />
     <MESSAGE value="converting Pubdate" />
     <MESSAGE value="converting dates" />
-    <option name="LAST_COMMIT_MESSAGE" value="converting dates" />
+    <MESSAGE value="scraping zakupkiKR" />
+    <option name="LAST_COMMIT_MESSAGE" value="scraping zakupkiKR" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
