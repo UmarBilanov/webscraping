@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75ebca36-c703-4a0d-b33a-9f9e2f1b2779" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scrapingZakupkiGov.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geckodriver.log" afterPath="$PROJECT_DIR$/geckodriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapingLotsGos.py" afterPath="$PROJECT_DIR$/scrapingLotsGos.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/draftGos.py" afterPath="$PROJECT_DIR$/draftGos.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +25,8 @@
       <file leaf-file-name="scrapingLotsGos.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapingLotsGos.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="326" column="34" lean-forward="false" selection-start-line="324" selection-start-column="4" selection-end-line="326" selection-end-column="34" />
+            <state relative-caret-position="-641">
+              <caret line="231" column="49" lean-forward="false" selection-start-line="208" selection-start-column="0" selection-end-line="231" selection-end-column="49" />
               <folding>
                 <element signature="e#24#38#0" expanded="true" />
                 <element signature="e#359#2182#0" expanded="false" />
@@ -36,19 +35,78 @@
                 <element signature="e#6949#8387#0" expanded="false" />
                 <element signature="e#8421#9303#0" expanded="false" />
                 <element signature="e#9326#10486#0" expanded="false" />
-                <element signature="e#14748#17385#0" expanded="false" />
+                <element signature="e#10520#14715#0" expanded="false" />
                 <element signature="e#17387#17412#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="draftGos.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/draftGos.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="407" column="41" lean-forward="true" selection-start-line="391" selection-start-column="0" selection-end-line="407" selection-end-column="41" />
+              <folding>
+                <element signature="e#24#38#0" expanded="true" />
+                <element signature="e#283#428#0" expanded="false" />
+                <element signature="e#586#2147#0" expanded="false" />
+                <element signature="e#2202#3782#0" expanded="false" />
+                <element signature="e#4847#4869#0" expanded="false" />
+                <element signature="e#8320#11651#0" expanded="false" />
+                <element signature="e#12313#12938#0" expanded="false" />
+                <element signature="e#12971#13931#0" expanded="false" />
+                <element signature="e#13961#15071#0" expanded="false" />
+                <element signature="e#15097#15653#0" expanded="false" />
+                <element signature="e#15715#16233#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scrapingGos.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapingGos.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="72" column="23" lean-forward="false" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#379#2639#0" expanded="false" />
+                <element signature="e#2760#3511#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scrapingZakupkiGov.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scrapingZakupkiGov.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="702">
+              <caret line="470" column="26" lean-forward="false" selection-start-line="470" selection-start-column="26" selection-end-line="470" selection-end-column="26" />
+              <folding>
+                <element signature="e#24#38#0" expanded="true" />
+                <element signature="e#418#1895#0" expanded="false" />
+                <element signature="e#1925#3219#0" expanded="false" />
+                <element signature="e#3254#4330#0" expanded="false" />
+                <element signature="e#4357#7779#0" expanded="false" />
+                <element signature="e#7809#8572#0" expanded="false" />
+                <element signature="e#8598#9295#0" expanded="false" />
+                <element signature="e#9328#10407#0" expanded="false" />
+                <element signature="e#10437#11662#0" expanded="false" />
+                <element signature="e#11688#12438#0" expanded="false" />
+                <element signature="e#12461#13461#0" expanded="false" />
+                <element signature="e#13495#17689#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,12 +142,13 @@
         <option value="$PROJECT_DIR$/draft.py" />
         <option value="$PROJECT_DIR$/example.json" />
         <option value="$PROJECT_DIR$/lots.json" />
-        <option value="$PROJECT_DIR$/draftGos.py" />
         <option value="$PROJECT_DIR$/../WebscrapperDB/gen_info.json" />
         <option value="$PROJECT_DIR$/gen_info.json" />
         <option value="$PROJECT_DIR$/webscarping.py" />
         <option value="$PROJECT_DIR$/scrapingLotsGos.py" />
         <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/draftGos.py" />
+        <option value="$PROJECT_DIR$/scrapingZakupkiGov.py" />
       </list>
     </option>
   </component>
@@ -121,8 +180,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -548,32 +607,39 @@
       <option name="project" value="LOCAL" />
       <updated>1542463098197</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="converting dates">
+      <created>1542632470357</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1542632470357</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16494024" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16733068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49721116" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37306502" sideWeight="0.5250996" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49721116" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36068112" sideWeight="0.4749004" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.49402392" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41640866" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36068112" sideWeight="0.4749004" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41640866" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,7 +665,8 @@
     <MESSAGE value="zipped all files and export mongoDB" />
     <MESSAGE value="converting date" />
     <MESSAGE value="converting Pubdate" />
-    <option name="LAST_COMMIT_MESSAGE" value="converting Pubdate" />
+    <MESSAGE value="converting dates" />
+    <option name="LAST_COMMIT_MESSAGE" value="converting dates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -622,13 +689,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scrapingGos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapingArtists.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -841,13 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapingGos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapingEnter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -892,19 +945,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webscraping/scrapingLotsGos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="351" column="20" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="544" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/webscraping/scrapingLotsGos.py" />
     <entry file="file://$PROJECT_DIR$/webscarping.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="54" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,7 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -920,13 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="171" column="0" lean-forward="true" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#35#0" expanded="false" />
-            <element signature="e#1246#1788#0" expanded="false" />
-            <element signature="e#2567#3178#0" expanded="false" />
-            <element signature="e#3211#5210#0" expanded="false" />
-            <element signature="e#5239#5550#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -934,7 +971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -942,35 +978,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/draftGos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="430" column="31" lean-forward="false" selection-start-line="430" selection-start-column="29" selection-end-line="430" selection-end-column="31" />
+        <state relative-caret-position="242">
+          <caret line="407" column="41" lean-forward="true" selection-start-line="391" selection-start-column="0" selection-end-line="407" selection-end-column="41" />
           <folding>
-            <element signature="e#24#38#0" expanded="false" />
+            <element signature="e#24#38#0" expanded="true" />
             <element signature="e#283#428#0" expanded="false" />
-            <element signature="e#563#583#0" expanded="false" />
-            <element signature="e#2279#3859#0" expanded="false" />
-            <element signature="e#3894#4922#0" expanded="false" />
-            <element signature="e#4924#4946#0" expanded="false" />
-            <element signature="e#8397#11728#0" expanded="false" />
-            <element signature="e#11758#12593#0" expanded="false" />
-            <element signature="e#12619#13244#0" expanded="false" />
-            <element signature="e#13277#14237#0" expanded="false" />
-            <element signature="e#14267#15377#0" expanded="false" />
-            <element signature="e#15403#15959#0" expanded="false" />
+            <element signature="e#586#2147#0" expanded="false" />
+            <element signature="e#2202#3782#0" expanded="false" />
+            <element signature="e#4847#4869#0" expanded="false" />
+            <element signature="e#8320#11651#0" expanded="false" />
+            <element signature="e#12313#12938#0" expanded="false" />
+            <element signature="e#12971#13931#0" expanded="false" />
+            <element signature="e#13961#15071#0" expanded="false" />
+            <element signature="e#15097#15653#0" expanded="false" />
+            <element signature="e#15715#16233#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapingLotsGos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="326" column="34" lean-forward="false" selection-start-line="324" selection-start-column="4" selection-end-line="326" selection-end-column="34" />
+        <state relative-caret-position="-641">
+          <caret line="231" column="49" lean-forward="false" selection-start-line="208" selection-start-column="0" selection-end-line="231" selection-end-column="49" />
           <folding>
             <element signature="e#24#38#0" expanded="true" />
             <element signature="e#359#2182#0" expanded="false" />
@@ -979,17 +1021,42 @@
             <element signature="e#6949#8387#0" expanded="false" />
             <element signature="e#8421#9303#0" expanded="false" />
             <element signature="e#9326#10486#0" expanded="false" />
-            <element signature="e#14748#17385#0" expanded="false" />
+            <element signature="e#10520#14715#0" expanded="false" />
             <element signature="e#17387#17412#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
+    <entry file="file://$PROJECT_DIR$/scrapingGos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="378">
+          <caret line="72" column="23" lean-forward="false" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#379#2639#0" expanded="false" />
+            <element signature="e#2760#3511#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapingZakupkiGov.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="470" column="26" lean-forward="false" selection-start-line="470" selection-start-column="26" selection-end-line="470" selection-end-column="26" />
+          <folding>
+            <element signature="e#24#38#0" expanded="true" />
+            <element signature="e#418#1895#0" expanded="false" />
+            <element signature="e#1925#3219#0" expanded="false" />
+            <element signature="e#3254#4330#0" expanded="false" />
+            <element signature="e#4357#7779#0" expanded="false" />
+            <element signature="e#7809#8572#0" expanded="false" />
+            <element signature="e#8598#9295#0" expanded="false" />
+            <element signature="e#9328#10407#0" expanded="false" />
+            <element signature="e#10437#11662#0" expanded="false" />
+            <element signature="e#11688#12438#0" expanded="false" />
+            <element signature="e#12461#13461#0" expanded="false" />
+            <element signature="e#13495#17689#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
