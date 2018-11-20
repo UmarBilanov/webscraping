@@ -19461,3 +19461,277 @@ console.error: BroadcastService:
 
 1542627599012	Marionette	INFO	Stopped listening on port 43217
 [Parent 14250, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542703346986	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.BMZ0qIbrMkhB"
+
+(firefox:5607): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:5607): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1542703352428	Marionette	INFO	Listening on port 43865
+1542703352477	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1542703404287	Marionette	INFO	Stopped listening on port 43865
+[Parent 5607, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542703407086	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.FCrbGOFMAJjs"
+
+(firefox:5895): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:5895): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1542703411085	Marionette	INFO	Listening on port 43723
+1542703411115	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1542703452181	Marionette	INFO	Stopped listening on port 43723
+[Parent 5895, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542704526634	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.hudv5lHf490G"
+
+(firefox:6720): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:6720): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1542704530262	Marionette	INFO	Listening on port 35953
+1542704530383	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1542704583150	Marionette	INFO	Stopped listening on port 35953
+[Parent 6720, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 6720, Gecko_IOThread] WARNING: pipe error (95): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542704586138	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.2j5i8LpCxzsV"
+
+(firefox:7007): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:7007): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1542704589901	Marionette	INFO	Listening on port 38011
+1542704589953	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+[Parent 7007, Gecko_IOThread] WARNING: pipe error (70): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 7007, Gecko_IOThread] WARNING: pipe error (93): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542704688902	Marionette	INFO	Stopped listening on port 38011
+1542705763630	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Nlg7U56TUoXj"
+
+(firefox:7888): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:7888): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1542705767058	Marionette	INFO	Listening on port 33749
+1542705767284	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1542705818177	Marionette	INFO	Stopped listening on port 33749
+[Parent 7888, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542705827025	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.NSq9cDSyUHcd"
+
+(firefox:8194): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:8194): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1542705832228	Marionette	INFO	Listening on port 33989
+1542705832246	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+[Parent 8194, Gecko_IOThread] WARNING: pipe error (70): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 8194, Gecko_IOThread] WARNING: pipe error (93): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542706040245	Marionette	INFO	Stopped listening on port 33989
+1542706109699	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.qoyiow6q5ptB"
+
+(firefox:8726): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:8726): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1542706113133	Marionette	INFO	Listening on port 44893
+1542706113212	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1542706163783	Marionette	INFO	Stopped listening on port 44893
+[Parent 8726, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542706167960	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Eh2Wj76tFjIJ"
+
+(firefox:8989): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:8989): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1542706171140	Marionette	INFO	Listening on port 41377
+1542706171196	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+[Parent 8989, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 8989, Gecko_IOThread] WARNING: pipe error (86): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542706594275	Marionette	INFO	Stopped listening on port 41377
+1542706674406	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0dVArlNpQ29r"
+
+(firefox:9489): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:9489): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1542706677828	Marionette	INFO	Listening on port 46519
+1542706677943	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1542706728463	Marionette	INFO	Stopped listening on port 46519
+[Parent 9489, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542706731565	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.x8dPWJNwe6uU"
+
+(firefox:9774): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:9774): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1542706734714	Marionette	INFO	Listening on port 40001
+1542706734777	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+[Parent 9774, Gecko_IOThread] WARNING: pipe error (70): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 9774, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542706821646	Marionette	INFO	Stopped listening on port 40001
+1542706890664	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dysnM9scTjpn"
+
+(firefox:10132): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:10132): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1542706893983	Marionette	INFO	Listening on port 41443
+1542706894082	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542706944701	Marionette	INFO	Stopped listening on port 41443
+[Parent 10132, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542706949937	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.sSCEiLIfVrQb"
+
+(firefox:10427): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:10427): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1542706953111	Marionette	INFO	Listening on port 35917
+1542706953162	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1542707010583	Marionette	INFO	Stopped listening on port 35917
+[Parent 10427, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1542707133465	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.yeg3fpbkGjgT"
+
+(firefox:10794): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:10794): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1542707136794	Marionette	INFO	Listening on port 45155
+1542707136879	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1542707187723	Marionette	INFO	Stopped listening on port 45155
+[Parent 10794, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542707191047	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.jwdWiyALgYD9"
+
+(firefox:11105): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:11105): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1542707194475	Marionette	INFO	Listening on port 34571
+1542707194562	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1542707240050	Marionette	INFO	Stopped listening on port 34571
+[Parent 11105, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542715661230	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.OHw6wM2GDUqe"
+
+(firefox:15615): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:15615): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1542715667318	Marionette	INFO	Listening on port 43093
+1542715667358	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1542715717932	Marionette	INFO	Stopped listening on port 43093
+[Parent 15615, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542715721501	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.U46Usqa4nU6x"
+
+(firefox:15888): Gtk-WARNING **: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox:15888): Gtk-WARNING **: Theme parsing error: <data>:1:77: Expected ')' in color definition
+1542715724554	Marionette	INFO	Listening on port 40123
+1542715724616	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://trade.okmot.kg/sobs/javax.faces.resource/calendar.js.xhtml?ln=js, line 1: ReferenceError: PrimeFaces is not defined
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1542715771645	Marionette	INFO	Stopped listening on port 40123
+[Parent 15888, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-j7tNrI/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356

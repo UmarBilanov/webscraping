@@ -13,44 +13,45 @@ import datetime
 link_page = 'http://zakupki.gov.kg/popp/view/order/view.xhtml?id='
 login_page = 'https://trade.okmot.kg/uac/view/user/login.xhtml'
 link_page2 = 'https://trade.okmot.kg/sobs/view/bid/short_info.xhtml?id='
+list_id = '134025360'
 
-def get_data_rk():
-    data_rk = []
-    url = "http://zakupki.gov.kg/popp/home.xhtml"
-
-    # create a new Firefox session
-    driver = webdriver.Firefox()
-    driver.implicitly_wait(30)
-    driver.get(url)
-    button = driver.find_element_by_link_text('Advanced search')
-    button.click()
-    button = driver.find_element_by_xpath('//div[@id="tv1:status"]/ul')
-    button.click()
-    button = driver.find_element_by_xpath('//div[@id="tv1:status_panel"]/div[2]/ul/li/div/div[2]/span')
-    button.click()
-    button = driver.find_element_by_xpath('//div[@id="tv1:status_panel"]/div/a')
-    button.click()
-    button = driver.find_element_by_xpath('//div[@id="tv1:ate"]/ul')
-    button.click()
-    button = driver.find_element_by_xpath('//div[@id="tv1:ate_panel"]/div[2]/ul/li[6]/div/div[2]/span')
-    button.click()
-    button = driver.find_element_by_xpath('//div[@id="tv1:ate_panel"]/div/a')
-    button.click()
-    button = driver.find_element_by_xpath('//input[@name=\'tv1:j_idt152\']')
-    button.click()
-
-    while True:
-        soup = BeautifulSoup(driver.page_source, 'html.parser')
-        for tr in soup.findAll('tr', {'class': 'ui-widget-content'}):
-            if 'data-rk' in tr.attrs:
-                data_rk.append(tr["data-rk"])
-        time.sleep(6)
-        button = driver.find_element_by_xpath('//div[@id=\'j_idt104:j_idt105:table_paginator_bottom\']/a[3]')
-        button.click()
-        if 'ui-state-disabled' in button.get_attribute('class'):
-            break
-
-    return data_rk
+# def get_data_rk():
+#     data_rk = []
+#     url = "http://zakupki.gov.kg/popp/home.xhtml"
+#
+#     # create a new Firefox session
+#     driver = webdriver.Firefox()
+#     driver.implicitly_wait(30)
+#     driver.get(url)
+#     button = driver.find_element_by_link_text('Advanced search')
+#     button.click()
+#     button = driver.find_element_by_xpath('//div[@id="tv1:status"]/ul')
+#     button.click()
+#     button = driver.find_element_by_xpath('//div[@id="tv1:status_panel"]/div[2]/ul/li/div/div[2]/span')
+#     button.click()
+#     button = driver.find_element_by_xpath('//div[@id="tv1:status_panel"]/div/a')
+#     button.click()
+#     button = driver.find_element_by_xpath('//div[@id="tv1:ate"]/ul')
+#     button.click()
+#     button = driver.find_element_by_xpath('//div[@id="tv1:ate_panel"]/div[2]/ul/li[6]/div/div[2]/span')
+#     button.click()
+#     button = driver.find_element_by_xpath('//div[@id="tv1:ate_panel"]/div/a')
+#     button.click()
+#     button = driver.find_element_by_xpath('//input[@name=\'tv1:j_idt152\']')
+#     button.click()
+#
+#     while True:
+#         soup = BeautifulSoup(driver.page_source, 'html.parser')
+#         for tr in soup.findAll('tr', {'class': 'ui-widget-content'}):
+#             if 'data-rk' in tr.attrs:
+#                 data_rk.append(tr["data-rk"])
+#         time.sleep(6)
+#         button = driver.find_element_by_xpath('//div[@id=\'j_idt104:j_idt105:table_paginator_bottom\']/a[3]')
+#         button.click()
+#         if 'ui-state-disabled' in button.get_attribute('class'):
+#             break
+#
+#     # return data_rk
 
 def get_general_info():
     resultLabel = []
@@ -66,9 +67,9 @@ def get_general_info():
                 resultLabel.append(span.text)
             for span1 in div.findAll('span', {'class': 'text'}):
                 resultText.append(span1.text)
-                links = span1.find("a")
-                if links is not None:
-                    a = links.attrs['href']
+                # links = span1.find("a")
+                # if links is not None:
+                #     a = links.attrs['href']
     gen_info = {l: t for l, t in zip(resultLabel, resultText)}
 
     x = gen_info[u"Планируемая сумма"]
@@ -76,7 +77,9 @@ def get_general_info():
 
     gen_info[u"Планируемая сумма"] = y
 
-    gen_info[u"Официальное информационное письмо по банковскому реквизиту"] = str(a)
+    # gen_info[u"Официальное информационное письмо по банковскому реквизиту"] = str(a)
+    del gen_info[u"Дата публикации"]
+    del gen_info[u"Срок подачи конкурсных заявок"]
 
     gen_info = {
         k.strip(): int(v)
@@ -122,7 +125,6 @@ def get_lots_info():
     lots = []
     resultText = []
     resultLabel = []
-    list_of_files = []
 
     driver = webdriver.Firefox()
     driver.implicitly_wait(30)
@@ -173,20 +175,11 @@ def get_lots_info():
                         resultText.append(td.text)
                     lotsSpecs = [{l.strip(): int(t) if t.isdigit() else t.strip()} for l, t in zip(resultLabel, resultText)]
 
-            for row in div.findAll('tr', {'class': 'ui-expanded-row-content ui-widget-content childRowFillBG'}):
-                for table in row.findAll('table', {'class': 'display-table private-room-table no-borders f-right'}):
-                    for td in table('td'):
-                        for links in td.findAll("a"):
-                            if links is not None:
-                                a = links.attrs['href']
-                                list_of_files.append(a)
-
     list_of_lots = [lots[i:i + 5] for i in range(0, len(lots), 5)]
-    # l[0:i][2] = [l[0:i][2].encode('ascii', 'ignore') for l in zip(list_of_lots)]
 
     list_of_spec = [lotsSpecs[i:i + 5] for i in range(0, len(lotsSpecs), 5)]
 
-    gen_info = [{'№': l[0:i][0].strip(), 'Наименование лота': l[0:i][1].strip(), 'Сумма': int(l[0:i][2].encode('ascii', 'ignore')) if l[0:i][2].encode('ascii', 'ignore').isdigit() else l[0:i][2].encode('ascii', 'ignore').strip(), 'Адрес и Место поставки': l[0:i][3].strip(), 'Сроки поставки товара': l[0:i][4].strip(), 'techSpecifies': t, 'Файл': f} for l, t, f in zip(list_of_lots, list_of_spec, list_of_files)]
+    gen_info = [{'№': l[0:i][0].strip(), 'Наименование лота': l[0:i][1].strip(), 'Сумма': int(l[0:i][2].encode('ascii', 'ignore')) if l[0:i][2].encode('ascii', 'ignore').isdigit() else l[0:i][2].encode('ascii', 'ignore').strip(), 'Адрес и Место поставки': l[0:i][3].strip(), 'Сроки поставки товара': l[0:i][4].strip(), 'techSpecifies': t} for l, t in zip(list_of_lots, list_of_spec)]
     jsonD = json.dumps(gen_info, indent=4)
     driver.close()
 
@@ -321,7 +314,7 @@ def get_pay_info():
     return jsonD.decode('unicode_escape')
 
 def get_files():
-    page = link_page2 + list_id
+    page2 = link_page2 + list_id
     profile = webdriver.FirefoxProfile()
     profile.set_preference("browser.download.folderList", 2)
     profile.set_preference("browser.download.manager.showWhenStarting", False)
@@ -339,8 +332,8 @@ def get_files():
     time.sleep(5)
     login = driver.find_element_by_xpath("//input[@value='Войти']")
     login.click()
-    time.sleep(5)
-    driver.get(page)
+    time.sleep(10)
+    driver.get(page2)
     time.sleep(10)
     button = driver.find_element_by_id('downloadLink')
     button.click()
@@ -352,6 +345,9 @@ def inserting_to_mongoDB():
     get_general_info()
     get_organization_info()
     get_lots_info()
+    get_requirements()
+    get_criteria()
+    get_special_require()
     get_special_info()
     get_pay_info()
     get_files()
@@ -433,6 +429,15 @@ def inserting_to_mongoDB():
     with open('/home/umar/PycharmProjects/WebscrapperDB/lots_info.json') as f:
         lots_data = json.load(f)
 
+    with open('/home/umar/PycharmProjects/WebscrapperDB/requirements_info.json') as f:
+        requirements_data = json.load(f)
+
+    with open('/home/umar/PycharmProjects/WebscrapperDB/criteria_info.json') as f:
+        criteria_data = json.load(f)
+
+    with open('/home/umar/PycharmProjects/WebscrapperDB/special_require.json') as f:
+        special_require_data = json.load(f)
+
     with open('/home/umar/PycharmProjects/WebscrapperDB/special_info.json') as f:
         special_data = json.load(f)
 
@@ -443,15 +448,18 @@ def inserting_to_mongoDB():
         "Наименование закупки": NamePurchase,
         "Дата публикации": PDate,
         "Срок подачи конкурсных заявок": FinalDate,
-        "General info": general_data,
-        "Organization info": organization_data,
-        "Lots info": lots_data,
-        "Special info": special_data,
-        "Pay info": pay_data,
-        "Attached files": out._id
+        "Общие данные": general_data,
+        "Информация об организации": organization_data,
+        "Лоты": lots_data,
+        "Квалификационные требования": requirements_data,
+        "Критерии оценки конкурсных заявок": criteria_data,
+        "Специальные требования": special_require_data,
+        "Особые условия договора": special_data,
+        "Об условия оплаты": pay_data,
+        "Приклепленые файлы": out._id
     }
 
-    # mycol.remove()
+    mycol.remove()
     mycol.insert(result_data, check_keys=False)
     # inserting the files and and archive to MongoDB
     myclient.close()
@@ -467,5 +475,6 @@ def inserting_to_mongoDB():
             print(e)
     # deleting the files in folder
 
-for list_id in get_data_rk():
-    inserting_to_mongoDB()
+inserting_to_mongoDB()
+# for list_id in get_data_rk():
+#     inserting_to_mongoDB()
