@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75ebca36-c703-4a0d-b33a-9f9e2f1b2779" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DockerFile" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/draft031018.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrapingGos.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.py" afterPath="$PROJECT_DIR$/config.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geckodriver.log" afterPath="$PROJECT_DIR$/geckodriver.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapingZakupkiGov.py" afterPath="$PROJECT_DIR$/scrapingZakupkiGov.py" />
     </list>
@@ -14,7 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/webscraping$webscarping.coverage" NAME="webscarping Coverage Results" MODIFIED="1542715657682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/webscraping$webscarping.coverage" NAME="webscarping Coverage Results" MODIFIED="1542802149436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -25,8 +29,8 @@
       <file leaf-file-name="scrapingLotsGos.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapingLotsGos.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="236">
+              <caret line="49" column="51" lean-forward="false" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
               <folding>
                 <element signature="e#24#38#0" expanded="true" />
                 <element signature="e#2217#3406#0" expanded="false" />
@@ -44,45 +48,19 @@
       <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="36">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="draftGos.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/draftGos.py">
+      <file leaf-file-name="gen_info.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gen_info.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="407" column="41" lean-forward="false" selection-start-line="391" selection-start-column="0" selection-end-line="407" selection-end-column="41" />
-              <folding>
-                <element signature="e#24#38#0" expanded="true" />
-                <element signature="e#283#428#0" expanded="false" />
-                <element signature="e#586#2147#0" expanded="false" />
-                <element signature="e#2202#3782#0" expanded="false" />
-                <element signature="e#4847#4869#0" expanded="false" />
-                <element signature="e#8320#11651#0" expanded="false" />
-                <element signature="e#12313#12938#0" expanded="false" />
-                <element signature="e#12971#13931#0" expanded="false" />
-                <element signature="e#13961#15071#0" expanded="false" />
-                <element signature="e#15097#15653#0" expanded="false" />
-                <element signature="e#15715#16233#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scrapingGos.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapingGos.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="72" column="23" lean-forward="false" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#379#2639#0" expanded="false" />
-                <element signature="e#2760#3511#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="54">
+              <caret line="174" column="8" lean-forward="false" selection-start-line="174" selection-start-column="8" selection-end-line="174" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,21 +68,19 @@
       <file leaf-file-name="scrapingZakupkiGov.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scrapingZakupkiGov.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="479" column="28" lean-forward="true" selection-start-line="479" selection-start-column="28" selection-end-line="479" selection-end-column="28" />
+            <state relative-caret-position="166">
+              <caret line="413" column="63" lean-forward="true" selection-start-line="413" selection-start-column="63" selection-end-line="413" selection-end-column="63" />
               <folding>
                 <element signature="e#24#38#0" expanded="true" />
-                <element signature="e#417#437#0" expanded="false" />
-                <element signature="e#2020#3410#0" expanded="false" />
-                <element signature="e#3445#4521#0" expanded="false" />
-                <element signature="e#4548#7345#0" expanded="false" />
-                <element signature="e#7375#8138#0" expanded="false" />
-                <element signature="e#8164#8861#0" expanded="false" />
-                <element signature="e#8894#9973#0" expanded="false" />
-                <element signature="e#10003#11228#0" expanded="false" />
-                <element signature="e#11254#12004#0" expanded="false" />
-                <element signature="e#12027#13030#0" expanded="false" />
-                <element signature="e#13064#17905#0" expanded="false" />
+                <element signature="e#1986#3160#0" expanded="false" />
+                <element signature="e#3195#4271#0" expanded="false" />
+                <element signature="e#4298#7143#0" expanded="false" />
+                <element signature="e#7173#7936#0" expanded="false" />
+                <element signature="e#7962#8659#0" expanded="false" />
+                <element signature="e#8692#9771#0" expanded="false" />
+                <element signature="e#9801#11026#0" expanded="false" />
+                <element signature="e#11052#11802#0" expanded="false" />
+                <element signature="e#11825#12949#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -142,12 +118,13 @@
         <option value="$PROJECT_DIR$/example.json" />
         <option value="$PROJECT_DIR$/lots.json" />
         <option value="$PROJECT_DIR$/../WebscrapperDB/gen_info.json" />
-        <option value="$PROJECT_DIR$/gen_info.json" />
         <option value="$PROJECT_DIR$/webscarping.py" />
         <option value="$PROJECT_DIR$/scrapingLotsGos.py" />
-        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/draftGos.py" />
+        <option value="$PROJECT_DIR$/gen_info.json" />
         <option value="$PROJECT_DIR$/scrapingZakupkiGov.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/DockerFile" />
       </list>
     </option>
   </component>
@@ -179,6 +156,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -194,7 +172,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -634,14 +611,21 @@
       <option name="project" value="LOCAL" />
       <updated>1542645876172</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="endurance">
+      <created>1542716785884</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1542716785885</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17211156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17450199" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49721116" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37306502" sideWeight="0.5250996" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -687,7 +671,8 @@
     <MESSAGE value="converting Pubdate" />
     <MESSAGE value="converting dates" />
     <MESSAGE value="scraping zakupkiKR" />
-    <option name="LAST_COMMIT_MESSAGE" value="scraping zakupkiKR" />
+    <MESSAGE value="endurance" />
+    <option name="LAST_COMMIT_MESSAGE" value="endurance" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -717,13 +702,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scrapingArtists.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapingEnter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -922,13 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/draft031018.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="54" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapingEnter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -981,20 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen_info.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/draft.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="171" column="0" lean-forward="true" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1009,50 +966,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/draftGos.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
           <caret line="407" column="41" lean-forward="false" selection-start-line="391" selection-start-column="0" selection-end-line="407" selection-end-column="41" />
-          <folding>
-            <element signature="e#24#38#0" expanded="true" />
-            <element signature="e#283#428#0" expanded="false" />
-            <element signature="e#586#2147#0" expanded="false" />
-            <element signature="e#2202#3782#0" expanded="false" />
-            <element signature="e#4847#4869#0" expanded="false" />
-            <element signature="e#8320#11651#0" expanded="false" />
-            <element signature="e#12313#12938#0" expanded="false" />
-            <element signature="e#12971#13931#0" expanded="false" />
-            <element signature="e#13961#15071#0" expanded="false" />
-            <element signature="e#15097#15653#0" expanded="false" />
-            <element signature="e#15715#16233#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapingGos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="72" column="23" lean-forward="false" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#379#2639#0" expanded="false" />
-            <element signature="e#2760#3511#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapingLotsGos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="236">
+          <caret line="49" column="51" lean-forward="false" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
           <folding>
             <element signature="e#24#38#0" expanded="true" />
             <element signature="e#2217#3406#0" expanded="false" />
@@ -1066,23 +990,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen_info.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="174" column="8" lean-forward="false" selection-start-line="174" selection-start-column="8" selection-end-line="174" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapingGos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draft031018.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draft.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="171" column="0" lean-forward="true" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DockerFile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scrapingZakupkiGov.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="479" column="28" lean-forward="true" selection-start-line="479" selection-start-column="28" selection-end-line="479" selection-end-column="28" />
+        <state relative-caret-position="166">
+          <caret line="413" column="63" lean-forward="true" selection-start-line="413" selection-start-column="63" selection-end-line="413" selection-end-column="63" />
           <folding>
             <element signature="e#24#38#0" expanded="true" />
-            <element signature="e#417#437#0" expanded="false" />
-            <element signature="e#2020#3410#0" expanded="false" />
-            <element signature="e#3445#4521#0" expanded="false" />
-            <element signature="e#4548#7345#0" expanded="false" />
-            <element signature="e#7375#8138#0" expanded="false" />
-            <element signature="e#8164#8861#0" expanded="false" />
-            <element signature="e#8894#9973#0" expanded="false" />
-            <element signature="e#10003#11228#0" expanded="false" />
-            <element signature="e#11254#12004#0" expanded="false" />
-            <element signature="e#12027#13030#0" expanded="false" />
-            <element signature="e#13064#17905#0" expanded="false" />
+            <element signature="e#1986#3160#0" expanded="false" />
+            <element signature="e#3195#4271#0" expanded="false" />
+            <element signature="e#4298#7143#0" expanded="false" />
+            <element signature="e#7173#7936#0" expanded="false" />
+            <element signature="e#7962#8659#0" expanded="false" />
+            <element signature="e#8692#9771#0" expanded="false" />
+            <element signature="e#9801#11026#0" expanded="false" />
+            <element signature="e#11052#11802#0" expanded="false" />
+            <element signature="e#11825#12949#0" expanded="false" />
           </folding>
         </state>
       </provider>

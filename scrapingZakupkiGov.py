@@ -9,49 +9,50 @@ import gridfs
 import os
 import re
 import datetime
+import config
 
 link_page = 'http://zakupki.gov.kg/popp/view/order/view.xhtml?id='
 login_page = 'https://trade.okmot.kg/uac/view/user/login.xhtml'
 link_page2 = 'https://trade.okmot.kg/sobs/view/bid/short_info.xhtml?id='
 list_id = '134025360'
 
-# def get_data_rk():
-#     data_rk = []
-#     url = "http://zakupki.gov.kg/popp/home.xhtml"
-#
-#     # create a new Firefox session
-#     driver = webdriver.Firefox()
-#     driver.implicitly_wait(30)
-#     driver.get(url)
-#     button = driver.find_element_by_link_text('Advanced search')
-#     button.click()
-#     button = driver.find_element_by_xpath('//div[@id="tv1:status"]/ul')
-#     button.click()
-#     button = driver.find_element_by_xpath('//div[@id="tv1:status_panel"]/div[2]/ul/li/div/div[2]/span')
-#     button.click()
-#     button = driver.find_element_by_xpath('//div[@id="tv1:status_panel"]/div/a')
-#     button.click()
-#     button = driver.find_element_by_xpath('//div[@id="tv1:ate"]/ul')
-#     button.click()
-#     button = driver.find_element_by_xpath('//div[@id="tv1:ate_panel"]/div[2]/ul/li[6]/div/div[2]/span')
-#     button.click()
-#     button = driver.find_element_by_xpath('//div[@id="tv1:ate_panel"]/div/a')
-#     button.click()
-#     button = driver.find_element_by_xpath('//input[@name=\'tv1:j_idt152\']')
-#     button.click()
-#
-#     while True:
-#         soup = BeautifulSoup(driver.page_source, 'html.parser')
-#         for tr in soup.findAll('tr', {'class': 'ui-widget-content'}):
-#             if 'data-rk' in tr.attrs:
-#                 data_rk.append(tr["data-rk"])
-#         time.sleep(6)
-#         button = driver.find_element_by_xpath('//div[@id=\'j_idt104:j_idt105:table_paginator_bottom\']/a[3]')
-#         button.click()
-#         if 'ui-state-disabled' in button.get_attribute('class'):
-#             break
-#
-#     # return data_rk
+def get_data_rk():
+    data_rk = []
+    url = "http://zakupki.gov.kg/popp/home.xhtml"
+
+    # create a new Firefox session
+    driver = webdriver.Firefox()
+    driver.implicitly_wait(30)
+    driver.get(url)
+    button = driver.find_element_by_link_text('Advanced search')
+    button.click()
+    button = driver.find_element_by_xpath('//div[@id="tv1:status"]/ul')
+    button.click()
+    button = driver.find_element_by_xpath('//div[@id="tv1:status_panel"]/div[2]/ul/li/div/div[2]/span')
+    button.click()
+    button = driver.find_element_by_xpath('//div[@id="tv1:status_panel"]/div/a')
+    button.click()
+    button = driver.find_element_by_xpath('//div[@id="tv1:ate"]/ul')
+    button.click()
+    button = driver.find_element_by_xpath('//div[@id="tv1:ate_panel"]/div[2]/ul/li[6]/div/div[2]/span')
+    button.click()
+    button = driver.find_element_by_xpath('//div[@id="tv1:ate_panel"]/div/a')
+    button.click()
+    button = driver.find_element_by_xpath('//input[@name=\'tv1:j_idt152\']')
+    button.click()
+
+    while True:
+        soup = BeautifulSoup(driver.page_source, 'html.parser')
+        for tr in soup.findAll('tr', {'class': 'ui-widget-content'}):
+            if 'data-rk' in tr.attrs:
+                data_rk.append(tr["data-rk"])
+        time.sleep(config.Time_Config['norm'])
+        button = driver.find_element_by_xpath('//div[@id=\'j_idt104:j_idt105:table_paginator_bottom\']/a[3]')
+        button.click()
+        if 'ui-state-disabled' in button.get_attribute('class'):
+            break
+
+    return data_rk
 
 def get_general_info():
     resultLabel = []
@@ -67,17 +68,12 @@ def get_general_info():
                 resultLabel.append(span.text)
             for span1 in div.findAll('span', {'class': 'text'}):
                 resultText.append(span1.text)
-                # links = span1.find("a")
-                # if links is not None:
-                #     a = links.attrs['href']
     gen_info = {l: t for l, t in zip(resultLabel, resultText)}
 
     x = gen_info[u"Планируемая сумма"]
     y = x.encode('ascii', 'ignore')
-
     gen_info[u"Планируемая сумма"] = y
 
-    # gen_info[u"Официальное информационное письмо по банковскому реквизиту"] = str(a)
     del gen_info[u"Дата публикации"]
     del gen_info[u"Срок подачи конкурсных заявок"]
 
@@ -145,11 +141,11 @@ def get_lots_info():
 
     x = 1
     b = str(d)
-    time.sleep(5)
+    time.sleep(config.Time_Config['min'])
 
     while True:
         a = str(x)
-        time.sleep(6)
+        time.sleep(config.Time_Config['min'])
         xpath = '//tbody[@id="j_idt69:lotsTable_data"]/tr[' + a + ']/td[8]/div'
         button = driver.find_element_by_xpath(xpath)
         button.click()
@@ -323,21 +319,20 @@ def get_files():
 
     driver = webdriver.Firefox(firefox_profile=profile)
     driver.get(login_page)
-    time.sleep(6)
+    time.sleep(config.Time_Config['norm'])
     username = driver.find_element_by_id("username")
     password = driver.find_element_by_id("password")
-    username.send_keys("askartec")
-    time.sleep(5) #sleep_mini sleep_norm sleep_max sleep_long
-    password.send_keys("@BigMama2013")
-    time.sleep(5)
+    username.send_keys(config.SecretKey_Config['username'])
+    time.sleep(config.Time_Config['min'])
+    password.send_keys(config.SecretKey_Config['password'])
+    time.sleep(config.Time_Config['min'])
     login = driver.find_element_by_xpath("//input[@value='Войти']")
     login.click()
-    time.sleep(10)
+    time.sleep(config.Time_Config['norm'])
     driver.get(page2)
-    time.sleep(10)
+    time.sleep(config.Time_Config['max'])
     button = driver.find_element_by_id('downloadLink')
     button.click()
-
     driver.close()
 
 def inserting_to_mongoDB():
@@ -389,7 +384,6 @@ def inserting_to_mongoDB():
     rep = {"января": "01", "февраля": "02", "марта": "03", "апреля": "04", "мая": "05", "июня": "06", "июля": "07",
            "августа": "08", "сентября": "09", "октября": "10", "ноября": "11",
            "декабря": "12"}  # define desired replacements here
-
     # use these three lines to do the replacement
     rep = dict((re.escape(k), v) for k, v in rep.iteritems())
     pattern = re.compile("|".join(rep.keys()))
@@ -397,18 +391,15 @@ def inserting_to_mongoDB():
     e = pattern.sub(lambda m: rep[re.escape(m.group(0))], e)
     # replacing the string name of  month to number of month
 
-    print d
-    print type(d)
+    # converting string Date to date
     PDate = datetime.datetime.strptime(d, "%d %m %Y %H:%M")
     FinalDate = datetime.datetime.strptime(e, "%d %m %Y %H:%M")
-    print PDate
-    print FinalDate
     # converting string Date to date
 
     # connecting to mongoDB
-    myclient = pymongo.MongoClient("localhost:27017")
-    mydb = myclient["scrapping"]
-    mycol = mydb["zakupki.gov.kg"]
+    myclient = pymongo.MongoClient(host=config.MongoDB_CONFIG['host'], port=config.MongoDB_CONFIG['port'])
+    mydb = myclient[config.MongoDB_CONFIG['dbname']]
+    mycol = mydb[config.MongoDB_CONFIG['colname']]
     # connecting to mongoDB
 
     # inserting the archive to mongoDB
@@ -459,7 +450,7 @@ def inserting_to_mongoDB():
         "Приклепленые файлы": out._id
     }
 
-    mycol.remove()
+    # mycol.remove()
     mycol.insert(result_data, check_keys=False)
     # inserting the files and and archive to MongoDB
     myclient.close()
